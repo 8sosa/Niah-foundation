@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.homeHeroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../Images/pic1.png');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+.homeHeroHeader {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(20px, 2.5vw, 40px);
+    font-weight: 800;
+    font-style: normal;
+    color: #fff;
+    margin-top: 26%;
+}
+.homeHeroText {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 7px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    width: 85%;
+    margin-bottom: 10px;
+}
+.homeHeroBtnBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.homeHeroBtn {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 18px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 8px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+.greenGradientSection {
+    background-image: linear-gradient( white, #4EE44E, white);
+    width: 100%;
+    height: fit-content;
+    padding: 50px 35px;
+}
+.col1, .col2, .col3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    padding-top: 2vw;
+}
+.col1 {
+    background-image: url('../Images/icn.png');
+}
+.col2 {
+    background-image: url('../Images/icn1.png');
+}
+.col3 {
+    background-image: url('../Images/icn2.png');
+}
+.gradientTxt {
+    width: 100px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(8px, 2.5vw, 40px);
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+    font-style: normal;
+    text-align: justify;
+    color: #000;
+}
+.gradientTxtSub {
+    font-weight: 600;
+}
+.gradientTxt1 {
+    width: 100px;
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(10px, 2.5vw, 40px);
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+}
+.gradientTxt1sub {
+    font-weight: 600;
+}
+.mosaicBg {
+    background-image: url('../Images/mosaic-bg.png');
+    padding: 10px 20px;
+}
+.mosaicBg1 {
+    background-image: url('../Images/mosaic-bg.png');
+    padding: 50px 45px;
+}
+.OFHeader {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(15px, 2.5vw, 30px);
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    text-align: justify;
+    color: #000;
+}
+.peachHeader {
+    font-size: clamp(20px, 2.5vw, 40px);
+    color: #EE9090;
+}
+.peachHeader1 {
+    font-size: clamp(12px, 2.5vw, 24px);
+    color: #EE9090;
+    text-decoration: underline;
+    text-align: start;
+}
+.OFDesc {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(8px, 2.5vw, 16px);
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    text-align: justify;
+}
+.boxDiv, .boxDiv1 {
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.boxDiv1 {
+    width: 100%;
+    margin-top: 25px;
+}
+.MissionImgBox {
+    width: auto;
+    border: 2px solid #EE9090;
+    border-radius: 10px;
+    background-image: url('../Images/Picture2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.greenBg {
+    background-image: url('../Images/greenbg.png');
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.greenBgPic {
+    background-image: url('../Images/Picture2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.greenBgTxt, .greenBgHeader {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(12px, 2.5vw, 24px);
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    text-align: justify;
+    color: #000;
+}
+.greenBgHeader {
+    font-size: clamp(20px, 2.5vw, 40px);
+    font-weight: 400;
+}
+.greenBgTxt {
+    width: 100%;
+}
+.greenBgRow {
+    gap: 20px;
+}
+.eventHeader, .eventHeader1, .eventHeaderTxt, .eventHeaderBody {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(20px, 2.5vw, 24px);
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    text-align: justify;
+    color: #000;
+}
+.eventHeader, .eventHeader1 {
+    border-bottom: 2px solid #EE9090;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+.eventHeader1 {
+    border-bottom: 2px solid #000;
+}
+.eventHeaderTxt {
+    font-size: clamp(10px, 2.5vw, 20px);
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    border-bottom: 1px solid #000;
+}
+.eventHeaderBody {    
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(7px, 2.5vw, 14px);
+    font-weight: 300;
+}
+.eventPic {
+    background-image: url('../Images/Picture.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.donateCard, .subscribeCard {
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #000;
+    border-radius: 20px;
+    background-color: #EE9090;
+    margin-top: 90px;
+}
+.subscribeCard {
+    background-color: #9090EE;
+
+}
+.donateCardBtn {
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: clamp(8px, 2.5vw, 16px);
+    border-radius: 20px;
+}
+.donateCardHeader, .donateCardBody {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    text-align: justify;
+    color: #fff;
+}
+.donateCardHeader {
+    font-size: clamp(12px, 2.5vw, 24px);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    width: fit-content;
+}
+.donateCardBody {
+    font-size: clamp(8px, 2.5vw, 16px);
+    font-weight: 500;
+    line-height: 10px;
+    width: 100%;
+}
+.green {
+    color: #4EE44E;
+}
+.greenBg1 {
+    background-image: url('../Images/greenBg1.png');
+    padding: 50px 40px;
+}
+.newEventImg {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-image: url('../Images/PictureK.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 90px;
+    min-height: 120px;
+    margin-bottom: 5px;
+}
+.newEventHeader, .newEventTxt {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    text-align: justify;
+    color: #000;
+}
+.newEventHeader {
+    font-size: clamp(10px, 2.5vw, 20px);
+    font-weight: 500;
+}
+.newEventTxt {
+    font-size: clamp(7px, 2.5vw, 14px);
+    font-weight: 300;
+}
+.header1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(15px, 2.5vw, 30px);
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    text-align: justify;
+    color: #000;
+    width: fit-content;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+.body1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(8px, 2.5vw, 16px);
+    font-weight: 300;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    text-align: justify;
+    color: #000;
+    width: fit-content;
+    margin-top: 40px;
+}
+.purple {
+    color: #9090EE;
+}
+.peach {
+    color: #EE9090;
+}
+.input {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    width: 80%;
+    text-align: start;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(8px, 2.5vw, 16px);
+    font-weight: 300;
+}
