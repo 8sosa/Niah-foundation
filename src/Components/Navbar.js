@@ -10,8 +10,7 @@ function NiahNavbar() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-
+    
   return (
     <Navbar collapseOnSelect expand="lg" className="niahNavbar" as="nav">
         <Container className='niahNavbarContainer'>
@@ -21,15 +20,15 @@ function NiahNavbar() {
             <Offcanvas.Header closeButton></Offcanvas.Header>
             <Offcanvas.Body className='d-flex flex-column align-items-center'>
                 <div className='navbox'>
-                    <a href="#home" className="navLink" aria-label="Home">Home</a>
-                    <a href="#about" className="navLink" aria-label="About Us">About Us</a>
-                    <a href="#Events" className="navLink" aria-label="events">Events</a>
-                    <a href="#Team" className="navLink" aria-label="Team">The Team</a>
-                    <a href="#Volunteer" className="navLink" aria-label="Volunteer">Volunteer</a>
-                    <a href="#Publications" className="navLink" aria-label="Publications">Publications</a>
-                    <a href="#Workshops" className="navLink" aria-label="Workshops">Workshops</a>
-                    <a href="#Community" className="navLink" aria-label="Community">Community</a>
-                    <a href="#contact" className="navLink" aria-label="Contact Us">Contact Us</a>
+                    <a href="/" className="navLink" aria-label="Home">Home</a>
+                    <a href="/about-us" className="navLink" aria-label="About Us">About Us</a>
+                    <a href="/events" className="navLink" aria-label="events">Events</a>
+                    <a href="/the-team" className="navLink" aria-label="Team">The Team</a>
+                    <a href="/volunteer" className="navLink" aria-label="Volunteer">Volunteer</a>
+                    <a href="/publications" className="navLink" aria-label="Publications">Publications</a>
+                    <a href="/workshops" className="navLink" aria-label="Workshops">Workshops</a>
+                    <a href="/community" className="navLink" aria-label="Community">Community</a>
+                    <a href="/contact-us" className="navLink" aria-label="Contact Us">Contact Us</a>
                     <a href='#home'><button className='niahNavbarBtn'>Donate</button></a>
                 </div>
             </Offcanvas.Body>
