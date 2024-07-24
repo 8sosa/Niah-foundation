@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+.openSans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.hero {
+    background-image: url('../../Images/HERO.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    max-width: 100% !important;
+    margin: 0px;
+}
+.origins {
+    background-color: #90EE90;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.originsHeader {
+    font-weight: 400 !important;
+    border-bottom: 1px solid #000 !important;
+    margin-bottom: 1.75rem;
+}
+.originsBody {
+    font-weight: 400 !important;
+}
+.founder {
+    background-color: #000;
+    background-image: url('../../Images/founderBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.founderPic {
+    border: 2px solid #9090EE;
+    border-radius: 25px;
+    width: 80%;
+    max-height: 300px;
+    object-fit: cover;
+}
+.founderHeader {
+    color: #4EE44E !important;
+    font-size: clamp(15px, 20px, 30px) !important;
+    font-weight: 300 !important;
+    align-self: center !important;
+    margin-bottom: 20px;
+}
+.founderHeaderBold {
+    font-size: clamp(20px, 30px, 40px) !important;
+    font-weight: 600 !important;
+}
+.founderBody {
+    color: #4EE44E !important;
+    font-weight: 400 !important;
+    font-size: clamp(10px, 13px, 25px) !important;
+}
+.fitted {
+    max-width: fit-content;
+}
+.eventImg {
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.eventHeader {
+    font-size: clamp(15px, 20px, 30px) !important;
+    font-weight: 300 !important;
+    margin-bottom: 20px;
+}
+.eventHeaderBody {
+    height: 75px;
+    overflow: scroll;
+}
+.accordion-item {
+    border: 0px;
+}
+.accordion-header {
+    border-bottom: 1px solid #000;
+}
+.aboutHeader {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 0px !important;
+}
+.aboutBody {
+    background-color: #fff;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 0px 0px 20px 20px;
+}
