@@ -5,7 +5,7 @@ import {Container, Navbar, Offcanvas} from 'react-bootstrap';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import Logo from '../Images/logoBlack.png'
 
-function NiahNavbar() {
+export default function NiahNavbar() {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -14,7 +14,7 @@ function NiahNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="niahNavbar" as="nav">
         <Container className='niahNavbarContainer'>
-          <Navbar.Brand href="/home"><img src={Logo} alt='Niah Foundation' className='niahLogo' /></Navbar.Brand>
+          <Navbar.Brand href="/"><img src={Logo} alt='Niah Foundation' className='niahLogo' /></Navbar.Brand>
           <div onClick={handleShow} className='niahNavbarToggle'><RxHamburgerMenu /></div>
           <Offcanvas show={show} onHide={handleClose} placement='end' className="niahNavbarMenu">
             <Offcanvas.Header closeButton></Offcanvas.Header>
@@ -37,5 +37,3 @@ function NiahNavbar() {
       </Navbar>
   );
 }
-
-export default NiahNavbar;

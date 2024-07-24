@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+.openSans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.eventsPage {
+    background-image: url('../Images/mosaic-bg.png');
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.pageHeader {
+    text-align: center;
+    width: fit-content;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    margin-bottom: 2.5rem;
+}
+.accordion {
+    width: 100%;
+}
+.eventGroup {
+    width: 100%;
+    margin-bottom: 100px;
+}

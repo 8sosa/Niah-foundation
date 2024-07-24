@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "src": "Picture.png",
+      "alt": "First slide",
+      "header": "John Doe",
+      "subHeader": "Graphic Designer",
+      "body": "Nullam vitae tristique nisl. Proin sapien purus, vulputate ac dapibus a, sollicitudin vel tellus. Quisque quis sollicitudin risus. Duis aliquet diam risus, id feugiat metus viverra quis.",
+      "footer": "19TH NOV 2020"
+    },
+    {
+      "id": 2,
+      "src": "Picture2.png",
+      "alt": "Second slide",
+      "header": "Jane Smith",
+      "subHeader": "Software Engineer",
+      "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "footer": "20TH NOV 2020"
+    },
+    {
+      "id": 3,
+      "src": "PictureK.png",
+      "alt": "Second slide",
+      "header": "Jane Dayo",
+      "subHeader": "Software Designer",
+      "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "footer": "20TH Sept 2020"
+    },
+    {
+      "id": 4,
+      "src": "Picture.png",
+      "alt": "Second slide",
+      "header": "Dan Shiki",
+      "subHeader": "Graphic Designer",
+      "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "footer": "20TH NOV 2020"
+    },
+    {
+      "id": 5,
+      "src": "Picture2.png",
+      "alt": "Second slide",
+      "header": "Mican Sule",
+      "subHeader": "System Programmer",
+      "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "footer": "20TH NOV 2020"
+    },
+    {
+      "id": 6,
+      "src": "PictureK.png",
+      "alt": "Second slide",
+      "header": "Yaya Too Ray",
+      "subHeader": "Software Engineer",
+      "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "footer": "20TH NOV 2020"
+    },
+    {
+      "id": 7,
+      "src": "Picture.png",
+      "alt": "Second slide",
+      "header": "Kehinde Milady",
+      "subHeader": "Graphic Designer",
+      "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "footer": "20TH NOV 2020"
+    },
+    {
+      "id": 8,
+      "src": "Picture2.png",
+      "alt": "Second slide",
+      "header": "Samuel Jackson",
+      "subHeader": "Software Engineer",
+      "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "footer": "20TH NOV 2020"
+    }
+  ]
+  

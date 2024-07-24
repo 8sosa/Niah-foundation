@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+.openSans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.pageHeader {
+    padding-left: 10px;
+    border-bottom: 1px solid #000;
+}
+.sponsorHeader {
+    color: #fff !important;
+    border-bottom: 0px !important;
+    font-weight: 700 !important;
+}
+.accordion {
+    width: 100%;
+}
+.accordion-button, .accordion-button:focus, .accordion-button:not(.collapsed) {
+    border-radius: inherit;
+    background-color: transparent;
+    box-shadow: none;
+}
+.workshopGroup {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #000 !important;
+    border-radius: 20px !important;
+    background-color: transparent;
+}
+.subHeader {
+    align-self: flex-start;
+    font-size: clamp(10px, 13px, 20px);
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+.trainImg {
+    border: 1px solid #000;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.trainBody {
+    font-size: clamp(10px, 13px, 18px);
+    text-align: justify;
+}
+.txtCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.purpSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9090EE;
+    padding: 40px 25px;
+}
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
