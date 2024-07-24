@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../Images/pic1.png');
+    background-image: url('../../Images/pic1.png');
     background-position: center;
     background-size: cover;
     padding: 20px;
@@ -64,13 +64,13 @@
     padding-top: 2vw;
 }
 .col1 {
-    background-image: url('../Images/icn.png');
+    background-image: url('../../Images/icn.png');
 }
 .col2 {
-    background-image: url('../Images/icn1.png');
+    background-image: url('../../Images/icn1.png');
 }
 .col3 {
-    background-image: url('../Images/icn2.png');
+    background-image: url('../../Images/icn2.png');
 }
 .gradientTxt {
     width: 100px;
@@ -101,11 +101,11 @@
     font-weight: 600;
 }
 .mosaicBg {
-    background-image: url('../Images/mosaic-bg.png');
+    background-image: url('../../Images/mosaic-bg.png');
     padding: 10px 20px;
 }
 .mosaicBg1 {
-    background-image: url('../Images/mosaic-bg.png');
+    background-image: url('../../Images/mosaic-bg.png');
     padding: 50px 45px;
 }
 .OFHeader {
@@ -156,19 +156,19 @@
     width: auto;
     border: 2px solid #EE9090;
     border-radius: 10px;
-    background-image: url('../Images/Picture2.png');
+    background-image: url('../../Images/Picture2.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .greenBg {
-    background-image: url('../Images/greenbg.png');
+    background-image: url('../../Images/greenbg.png');
     padding: 25px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .greenBgPic {
-    background-image: url('../Images/Picture2.png');
+    background-image: url('../../Images/Picture2.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
@@ -229,7 +229,7 @@
     font-weight: 300;
 }
 .eventPic {
-    background-image: url('../Images/Picture.png');
+    background-image: url('../../Images/Picture.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
@@ -288,13 +288,13 @@
     color: #4EE44E;
 }
 .greenBg1 {
-    background-image: url('../Images/greenBg1.png');
+    background-image: url('../../Images/greenBg1.png');
     padding: 50px 40px;
 }
 .newEventImg {
     border: 1px solid #000;
     border-radius: 5px;
-    background-image: url('../Images/PictureK.png');
+    background-image: url('../../Images/PictureK.png');
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 90px;

@@ -10,7 +10,7 @@
 }
 
 .eventsPage {
-    background-image: url('../Images/mosaic-bg.png');
+    background-image: url('../../Images/mosaic-bg.png');
     padding: 50px 20px;
     display: flex;
     flex-direction: column;

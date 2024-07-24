@@ -9,7 +9,7 @@
     font-optical-sizing: auto;
 }
 .contactContainer {
-    background-image: url('../Images/contactBg.png');
+    background-image: url('../../Images/contactBg.png');
     padding: 40px;
 }
 .pageHeader {

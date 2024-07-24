@@ -3,15 +3,15 @@ import React from 'react';
 
 import NavBar from './Navbar';
 import Footer from './Footer';
-import Home from '../Pages/Home';
-import About from '../Pages/About';
-import Events from '../Pages/Events';
-import Team from '../Pages/Team';
-import Volunteer from '../Pages/Volunteer';
-import Publications from '../Pages/Publications';
-import Workshops from '../Pages/Workshops';
-import Community from '../Pages/Community';
-import Contact from '../Pages/Contact';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Events from './Pages/Events';
+import Team from './Pages/Team';
+import Volunteer from './Pages/Volunteer';
+import Publications from './Pages/Publications';
+import Workshops from './Pages/Workshops';
+import Community from './Pages/Community';
+import Contact from './Pages/Contact';
 
 export default function NiahRouter() {
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Accordion, Col, Container, Row } from 'react-bootstrap'
 import './Workshops.css'
-import TrainImg from '../Images/MPicture.png'
-import Sponsor from '../Images/sponsor.png'
-import NiahCarousel from '../Components/Carousel';
+import TrainImg from '../../Images/MPicture.png'
+import Sponsor from '../../Images/sponsor.png'
+import NiahCarousel from '../Carousel';
 
 
 
