@@ -1,30 +1,44 @@
 import React from 'react'
-import { Accordion, Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import './Events.css'
-
+import EventImg from '../../Images/HPicture.png'
 export default function Events() {
   return (
     <>
         <Container className='eventsPage'>
             <h1 className='pageHeader raleway'>Events</h1>
-              <Accordion defaultActiveKey="0" className='accordion'>
-                <Accordion.Item eventKey="0" className='eventGroup'>
-                  <Accordion.Header>Upcoming events</Accordion.Header>
-                  <Accordion.Body>
-                    <div>
-                      <h1>1</h1>
-                    </div>
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>Previous events</Accordion.Header>
-                  <Accordion.Body>
-                    <div>
-                      <h1>2</h1>
-                    </div>
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+            <div className='d-flex flex-column w100 mb-5'>
+              <div className='eventGroupHeader'>
+                <h2 className='eventGroupHeaderTxt raleway m-0'>Upcoming events</h2>
+                <hr className='line'/>
+              </div>
+              <div className='d-flex flex-column w100 mb-4'>
+                <img src={EventImg} alt='Child getting blood pressure checked' className='eventImg' />
+                <h4 className='eventHeader subHeader raleway'>Event 1</h4>
+                <span className='eventBody raleway'>19th November 2099</span>
+              </div>
+              <div className='d-flex flex-column w100 mb-4'>
+                <img src={EventImg} alt='Child getting blood pressure checked' className='eventImg' />
+                <h4 className='eventHeader subHeader raleway'>Event 2</h4>
+                <span className='eventBody raleway'>19th November 2099</span>
+              </div>
+            </div>
+            <div className='d-flex flex-column w100 mb-5'>
+              <div className='eventGroupHeader'>
+                <h2 className='eventGroupHeaderTxt raleway m-0'>Previous events</h2>
+                <hr className='line'/>
+              </div>
+              <div className='d-flex flex-column w100 mb-4'>
+                <img src={EventImg} alt='Child getting blood pressure checked' className='eventImg' />
+                <h4 className='eventHeader subHeader raleway'>Event 1</h4>
+                <span className='eventBody raleway'>19th November 2099</span>
+              </div>
+              <div className='d-flex flex-column w100 mb-4'>
+                <img src={EventImg} alt='Child getting blood pressure checked' className='eventImg' />
+                <h4 className='eventHeader subHeader raleway'>Event 2</h4>
+                <span className='eventBody raleway'>19th November 2099</span>
+              </div>
+            </div> 
         </Container>
     </>
   )

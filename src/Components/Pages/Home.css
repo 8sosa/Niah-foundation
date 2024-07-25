@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.w100 {
+    max-width: 100%;
+}
 .homeHeroSection {
     display: flex;
     flex-direction: column;
@@ -51,7 +54,9 @@
     background-image: linear-gradient( white, #4EE44E, white);
     width: 100%;
     height: fit-content;
-    padding: 50px 35px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
 }
 .col1, .col2, .col3 {
     display: flex;
@@ -195,7 +200,8 @@
     width: 100%;
 }
 .greenBgRow {
-    gap: 20px;
+    gap: 10px;
+    max-width: 100%;
 }
 .eventHeader, .eventHeader1, .eventHeaderTxt, .eventHeaderBody {
     font-family: "Raleway", sans-serif;
@@ -290,6 +296,9 @@
 .greenBg1 {
     background-image: url('../../Images/greenBg1.png');
     padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .newEventImg {
     border: 1px solid #000;

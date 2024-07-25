@@ -15,7 +15,7 @@ export default function Home() {
             </div>
         </section>
         <section className='greenGradientSection'>
-          <Row>
+          <Row className='w100'>
             <Col className='col1'>
               <span className='gradientTxt' > <span className='gradientTxtSub'>34%</span> Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</span>
               <h3 className='gradientTxt1'>SOME <span className='gradientTxt1sub'>MAGAZINE</span></h3>
@@ -33,7 +33,7 @@ export default function Home() {
         <section className='mosaicBg'>
           <h1 className='OFHeader'>Our <span className='peachHeader'>Foundation</span></h1>
           <p className='OFDesc mt-4'>“Empowering communities through compassion and action. Our mission is to drive positive change by fostering education, supporting mental health, and cultivating a spirit of unity. Together, we strive to create a brighter future for all, one act of kindness at a time." - Chat GPT</p>
-          <Row>
+          <Row className='w100'>
             <Col className='d-flex flex-column justify-content-space-between'>
               <div className='boxDiv'>
                 <h2 className='peachHeader1'>Mission</h2>
@@ -60,22 +60,23 @@ export default function Home() {
             <Col className='greenBgTxt'>Sed vitae ipsum dictum odio consectetur eleifend ut sed mi. Curabitur tincidunt sed quam ac elementum. Fusce posuere facilisis turpis, ut ullamcorper turpis semper sed. Nullam id massa vel dui ornare dignissim. Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</Col>
           </Row>
         </section>
-        <section className='mosaicBg m-4'>
+        <section className='mosaicBg m-4 d-flex flex-column'>
           <h1 className='eventHeader mb-4'>PAST EVENTS</h1>
-          <Row className='mb-3'>
+          <Row className='mb-3 w100'>
             <Col>
               <h2 className='eventHeaderTxt'>2023 BOOK DONATION DRIVE</h2>
               <p className='eventHeaderBody'>Curabitur quis fermentum nunc, bibendum faucibus velit. Fusce sit amet sem fringilla, accumsan mi non, vestibulum arcu. Nunc in tristique arcu. Nunc eleifend tellus vitae risus pulvinar varius. Cras consequat scelerisque dapibus.</p>
             </Col>
             <Col className='eventPic'></Col>
           </Row>
-          <Row>
+          <Row className='w100'>
             <Col>
               <h2 className='eventHeaderTxt'>2023 BOOK DONATION DRIVE</h2>
               <p className='eventHeaderBody'>Curabitur quis fermentum nunc, bibendum faucibus velit. Fusce sit amet sem fringilla, accumsan mi non, vestibulum arcu. Nunc in tristique arcu. Nunc eleifend tellus vitae risus pulvinar varius. Cras consequat scelerisque dapibus.</p>
             </Col>
             <Col className='eventPic'></Col>
           </Row>
+          <a href='/events' className='eventHeaderTxt align-self-end mb-5'>View more...</a>
           <div className='donateCard'>
             <h1 className='donateCardHeader'>Make a <span className='green'>Donation</span></h1>
             <p className='donateCardBody'>Integer non elementum magna. Duis rhoncus odio non iaculis mollis. Integer facilisis sollicitudin urna a pretium. Nulla efficitur luctus tristique. Sed iaculis, mi ut sagittis varius, justo lorem dignissim velit, efficitur pharetra nunc eros at velit.</p>
@@ -84,14 +85,14 @@ export default function Home() {
         </section>
         <section className='greenBg1'>
           <h1 className='eventHeader1 mb-4'>FUTURE EVENTS</h1>
-            <Row className='mb-3'>
+            <Row className='mb-3 w100'>
               <Col>
                 <h2 className='eventHeaderTxt'>2024 BOOK DONATION DRIVE</h2>
                 <p className='eventHeaderBody'>Curabitur quis fermentum nunc, bibendum faucibus velit. Fusce sit amet sem fringilla, accumsan mi non, vestibulum arcu. Nunc in tristique arcu. Nunc eleifend tellus vitae risus pulvinar varius. Cras consequat scelerisque dapibus.</p>
               </Col>
               <Col className='eventPic'></Col>
             </Row>
-            <Row>
+            <Row className='w100'>
               <Col>
                 <h2 className='eventHeaderTxt'>2024 BOOK DONATION DRIVE</h2>
                 <p className='eventHeaderBody'>Curabitur quis fermentum nunc, bibendum faucibus velit. Fusce sit amet sem fringilla, accumsan mi non, vestibulum arcu. Nunc in tristique arcu. Nunc eleifend tellus vitae risus pulvinar varius. Cras consequat scelerisque dapibus.</p>
@@ -99,7 +100,7 @@ export default function Home() {
               <Col className='eventPic'></Col>
             </Row>
             <h1 className='eventHeader1 mb-4 mt-5'>JOIN US IN THE FIELD</h1>
-            <Row>
+            <Row className='w100'>
               <Col className='d-flex flex-column align-items-center'>
                 <div className='newEventImg'></div>
                 <h4 className='newEventHeader'>BLOOD DRIVE</h4>

@@ -15,7 +15,7 @@ export default function Workshops() {
           <h2 className='subHeader raleway'>Upcoming Trainings</h2>
           <Accordion defaultActiveKey="0" className='accordion'>
             <Accordion.Item eventKey="0" className='workshopGroup'>
-              <Accordion.Header>Graphic Design</Accordion.Header>
+              <Accordion.Header className='workshopGroupHeader'>Graphic Design</Accordion.Header>
               <Accordion.Body>
                 <Row>
                   <Col className='d-flex flex-column align-items-center'>
@@ -31,7 +31,7 @@ export default function Workshops() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1" className='workshopGroup'>
-              <Accordion.Header>Graphic Design</Accordion.Header>
+              <Accordion.Header className='workshopGroupHeader'>Graphic Design</Accordion.Header>
               <Accordion.Body>
                 <Row>
                   <Col className='d-flex flex-column align-items-center'>
@@ -48,9 +48,9 @@ export default function Workshops() {
             </Accordion.Item>
           </Accordion>
           <h2 className='subHeader raleway mt-5'>Recent Trainings</h2>
-          <Accordion defaultActiveKey="0" className='accordion'>
+          <Accordion className='accordion'>
             <Accordion.Item eventKey="0" className='workshopGroup'>
-              <Accordion.Header>Graphic Design</Accordion.Header>
+              <Accordion.Header className='workshopGroupHeader'>Graphic Design</Accordion.Header>
               <Accordion.Body>
                 <Row>
                   <Col className='d-flex flex-column align-items-center'>
@@ -66,7 +66,7 @@ export default function Workshops() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1" className='workshopGroup'>
-              <Accordion.Header>Graphic Design</Accordion.Header>
+              <Accordion.Header className='workshopGroupHeader'>Graphic Design</Accordion.Header>
               <Accordion.Body>
                 <Row>
                   <Col className='d-flex flex-column align-items-center'>
