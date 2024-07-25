@@ -1,0 +1,80 @@
+.team {
+    background-color: #9090EE !important;
+    display: flex;
+    padding: 50px 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.shadow1 {
+    text-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+}
+.hero {
+    background-image: url('../../Images/teamHero.png') !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 18.75rem;
+}
+.heroHeader {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.greenBg1 {
+    background-image: url('../../Images/greenBg1.png');
+    padding: 3.125rem 2.8125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.founder1Img {
+    border: 0.125rem solid #EE9090;
+    border-radius: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+.founder1Txt {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.founder1Header {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    margin-top: 0.3125rem;
+    border-bottom: 0.0625rem solid #000;
+    padding: 0.125rem 0.375rem;
+    width: fit-content;
+}
+.bold {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.founder1Body {
+    font-size: 0.625rem;
+    margin-top: 0.625rem;
+    font-weight: 400;
+    text-align: justify;
+}
+.bold1 {
+    font-size: .75rem;
+    font-weight: 700;
+}
+.teamBody {
+    font-size: .625rem;
+    font-weight: 300;
+}
+.teamImg {
+    border: .0625rem solid #000;
+    border-radius: .625rem;
+    margin-bottom: .625rem;
+    box-shadow: 0px 0px 1.25rem 0px #0000008C;
+    max-width: 5.625rem;
+}
+.sectionHeader {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: .3125rem .8125rem;
+    border-bottom: .0625rem solid #000;
+    margin-bottom: 2.8125rem;
+}

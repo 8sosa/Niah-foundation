@@ -47,7 +47,7 @@ export default function Workshops() {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
-          <h2 className='subHeader raleway mt-5'>Recent Trainings</h2>
+          <h2 className='subHeader raleway mt-5'>Previous Trainings</h2>
           <Accordion className='accordion'>
             <Accordion.Item eventKey="0" className='workshopGroup'>
               <Accordion.Header className='workshopGroupHeader'>Graphic Design</Accordion.Header>
