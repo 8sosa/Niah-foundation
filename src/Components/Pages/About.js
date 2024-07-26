@@ -7,7 +7,7 @@ import Event from '../../Images/event.png'
 export default function About() {
   return (
     <>
-        <Container className='hero'></Container>
+        <Container className='hero'><h1 className='heroHeader raleway'>NIAH FOUNDATION</h1></Container>
         <Container className='origins'>
           <h1 className='originsHeader pageHeader raleway'>NF’s ORIGINS</h1>
           <p className='originsBody trainBody openSans'>Sed vitae ipsum dictum odio consectetur eleifend ut sed mi. Curabitur tincidunt sed quam ac elementum. Fusce posuere facilisis turpis, ut ullamcorper turpis semper sed. Nullam id massa vel dui ornare dignissim. Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</p>

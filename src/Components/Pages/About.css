@@ -70,7 +70,7 @@
 }
 .eventHeaderBody {
     height: 75px;
-    overflow: scroll;
+    overflow: hidden;
 }
 .accordion-item {
     border: 0px;

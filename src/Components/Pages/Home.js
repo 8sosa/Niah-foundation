@@ -14,7 +14,7 @@ export default function Home() {
                 <div className='homeHeroBtn'>INTERESTED?</div>
             </div>
         </section>
-        <section className='greenGradientSection'>
+        <section className='greenGradientSection mt-4'>
           <Row className='w100'>
             <Col className='col1'>
               <span className='gradientTxt' > <span className='gradientTxtSub'>34%</span> Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</span>
@@ -30,7 +30,7 @@ export default function Home() {
             </Col>
           </Row>
         </section>
-        <section className='mosaicBg'>
+        <section className='mosaicBg mt-5 mb-5'>
           <h1 className='OFHeader'>Our <span className='peachHeader'>Foundation</span></h1>
           <p className='OFDesc mt-4'>“Empowering communities through compassion and action. Our mission is to drive positive change by fostering education, supporting mental health, and cultivating a spirit of unity. Together, we strive to create a brighter future for all, one act of kindness at a time." - Chat GPT</p>
           <Row className='w100'>
@@ -53,15 +53,15 @@ export default function Home() {
           </div>
           <span className='OFDesc mb-4'>* Did you know NIAH FOUNDATION was able to help 300 women blah blah </span>
         </section>
-        <section className='greenBg'>
-          <h1 className='greenBgHeader mb-4'>NIAH FOUNDATION TEAM</h1>
-          <Row className='greenBgRow'>
+        <section className='greenBg pt-5 pb-5'>
+          <h1 className='greenBgHeader mb-4 mt-3'>NIAH FOUNDATION TEAM</h1>
+          <Row className='greenBgRow mb-3'>
             <Col className='greenBgPic'></Col>
             <Col className='greenBgTxt'>Sed vitae ipsum dictum odio consectetur eleifend ut sed mi. Curabitur tincidunt sed quam ac elementum. Fusce posuere facilisis turpis, ut ullamcorper turpis semper sed. Nullam id massa vel dui ornare dignissim. Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</Col>
           </Row>
         </section>
-        <section className='mosaicBg m-4 d-flex flex-column'>
-          <h1 className='eventHeader mb-4'>PAST EVENTS</h1>
+        <section className='mosaicBg mt-4 pb-5 d-flex flex-column'>
+          <h1 className='eventHeader mb-4 mt-4'>PAST EVENTS</h1>
           <Row className='mb-3 w100'>
             <Col>
               <h2 className='eventHeaderTxt'>2023 BOOK DONATION DRIVE</h2>
@@ -77,14 +77,14 @@ export default function Home() {
             <Col className='eventPic'></Col>
           </Row>
           <a href='/events' className='eventHeaderTxt align-self-end mb-5'>View more...</a>
-          <div className='donateCard'>
+          <div className='donateCard mb-4'>
             <h1 className='donateCardHeader'>Make a <span className='green'>Donation</span></h1>
             <p className='donateCardBody'>Integer non elementum magna. Duis rhoncus odio non iaculis mollis. Integer facilisis sollicitudin urna a pretium. Nulla efficitur luctus tristique. Sed iaculis, mi ut sagittis varius, justo lorem dignissim velit, efficitur pharetra nunc eros at velit.</p>
             <button className='donateCardBtn'>Donate Now</button>
           </div>
         </section>
-        <section className='greenBg1'>
-          <h1 className='eventHeader1 mb-4'>FUTURE EVENTS</h1>
+        <section className='greenBg1 pt-5 pb-5'>
+          <h1 className='eventHeader1 mb-4 mt-2'>FUTURE EVENTS</h1>
             <Row className='mb-3 w100'>
               <Col>
                 <h2 className='eventHeaderTxt'>2024 BOOK DONATION DRIVE</h2>
@@ -118,7 +118,7 @@ export default function Home() {
               </Col>
             </Row>
         </section>
-        <section className='mosaicBg1'>
+        <section className='mosaicBg1 mt-4 pb-5'>
           <h1 className='header1'>WHAT THE STREETS ARE SAYING</h1>
           <Row>
             <Col>
