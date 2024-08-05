@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Carousel.css';
 import { Col, Row } from 'react-bootstrap';
 import slideData from '../Json/testimonials.json';
 
 function NiahCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
 
   const slides = slideData;
   const numSlides = slides.length;
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % numSlides);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + numSlides) % numSlides);
-  };
 
   const getPrevIndex = (index) => (index - 1 + numSlides) % numSlides;
   const getNextIndex = (index) => (index + 1) % numSlides;
@@ -23,10 +16,30 @@ function NiahCarousel() {
   const prevIndex = getPrevIndex(currentIndex);
   const nextIndex = getNextIndex(currentIndex);
 
+  useEffect(() => {
+    const container = containerRef.current;
+
+    if (container) {
+      const handleScroll = (event) => {
+        if (event.deltaY > 0) {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % numSlides);
+        } else if (event.deltaY < 0 ) {
+          setCurrentIndex((prevIndex) => (prevIndex - 1 +numSlides) % numSlides);
+        }
+      };
+  
+      container.addEventListener('wheel', handleScroll);
+  
+      return () => {
+        container.removeEventListener('wheel', handleScroll);
+      };
+    }
+  }, [numSlides]);
+
   return (
-    <div className='slider'>
+    <div className='slider' ref={containerRef}>
       <div className='slides-container'>
-        <div onClick={prevSlide} className='itemPrev'>
+        <div className='itemPrev'>
           <Row className='idTop'>
             <Col className='idCol'>
               <img src={require('../Images/' + slides[prevIndex].src)} alt={slides[prevIndex].alt} className='itemImg' />
@@ -52,7 +65,7 @@ function NiahCarousel() {
           <p className='idBody openSans'>{slides[currentIndex].body}</p>
           <span className='idFooter openSans'>{slides[currentIndex].footer}</span>
         </div>
-        <div onClick={nextSlide} className='itemNext'>
+        <div className='itemNext'>
           <Row className='idTop'>
             <Col className='idCol'>
               <img src={require('../Images/' + slides[nextIndex].src)} alt={slides[nextIndex].alt} className='itemImg' />            

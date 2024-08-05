@@ -5,20 +5,16 @@ a {
 }
 .niahNavbar {
     background-color: #fff;
+    padding: 50px 25px;
 }
 .niahNavbarContainer {
     flex-direction: row;
 }
 .niahLogo {
-    max-width: 25px;
+    max-width: 50px;
 }
 .niahNavbarToggle {
-    display: flex;
-    background-color: #000 !important;
-    color: #fff !important;
-    border: 2px solid #4EE44E !important;
-    border-radius: 5px;
-    padding: 5px;
+    display: none;
 }
 .niahNavbarMenu {
     max-width: 50vw;
@@ -28,16 +24,23 @@ a {
     display: flex;
     flex-direction: column;
 }
+.navbox1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 .navLink {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: start;
+    text-wrap: nowrap;
     justify-content: center;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: clamp(20px, 2.5vw, 30px);
-    font-weight: 400;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 500;
     font-style: normal;
     color: #000;
     min-height: 50px;
@@ -46,19 +49,21 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #000 !important;
     color: #fff !important;
     border: 2px solid #4EE44E !important;
     border-radius: 25px;
     padding: 6px 29px;
-    width: 100%;
+    max-width: 100%;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: clamp(20px, 2.5vw, 30px);
+    font-size: 1rem;
     font-weight: 400;
     font-style: normal;
     color: #000;
     text-transform: uppercase;
+    margin-left: 1rem;
 }
 .smLink {
     font-family: "Open Sans", sans-serif;
@@ -74,5 +79,30 @@ a {
         top: 0;
         width: 100%;
         z-index: 1000;
+        padding: 10px;
+    }
+    .niahLogo {
+        max-width: 25px;
+    }
+    .niahNavbarToggle {
+        display: flex;
+        background-color: #000 !important;
+        color: #fff !important;
+        border: 2px solid #4EE44E !important;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .navbox1 {
+        display: none;
+    }
+    .navLink {
+        font-size: 1.25rem;
+    }
+    .niahNavbarBtn {
+        margin-top: 2.5rem;
+        margin-left: 0rem;
+    }
+    .ghost {
+        display: none;
     }
 }

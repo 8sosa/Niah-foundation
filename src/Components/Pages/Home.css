@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 .w100 {
     max-width: 100%;
 }
@@ -10,12 +11,12 @@
     background-image: url('../../Images/pic1.png');
     background-position: center;
     background-size: cover;
-    padding: 20px;
+    padding: 50px;
 }
 .homeHeroHeader {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-size: clamp(20px, 2.5vw, 40px);
+    font-size: 4rem;
     font-weight: 800;
     font-style: normal;
     color: #fff;
@@ -24,12 +25,12 @@
 .homeHeroText {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 7px;
+    font-size: 1rem;
     font-weight: 400;
     font-style: normal;
     color: #fff;
     width: 85%;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
 }
 .homeHeroBtnBox {
     display: flex;
@@ -45,7 +46,7 @@
     padding: 7px 18px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 8px;
+    font-size: 1rem;
     font-weight: 400;
     font-style: normal;
     color: #fff;
@@ -78,12 +79,12 @@
     background-image: url('../../Images/icn2.png');
 }
 .gradientTxt {
-    width: 100px;
+    max-width: 22rem;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-size: clamp(8px, 2.5vw, 40px);
     font-weight: 400;
-    line-height: 15px;
+    line-height: 3rem;
     letter-spacing: 0.005em;
     font-style: normal;
     text-align: justify;
@@ -93,11 +94,11 @@
     font-weight: 600;
 }
 .gradientTxt1 {
-    width: 100px;
-    margin-top: 10px;
+    min-width: 6.25rem;
+    margin-top: 1rem;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-size: clamp(10px, 2.5vw, 40px);
+    font-size: 1.3rem;
     font-weight: 400;
     font-style: normal;
     color: #000;
@@ -255,7 +256,6 @@
 }
 .subscribeCard {
     background-color: #9090EE;
-
 }
 .donateCardBtn {
     width: fit-content;
@@ -324,7 +324,7 @@
     font-weight: 500;
 }
 .newEventTxt {
-    font-size: clamp(7px, 2.5vw, 14px);
+    font-size: 1rem;
     font-weight: 300;
 }
 .header1 {
@@ -369,4 +369,295 @@
     font-optical-sizing: auto;
     font-size: clamp(8px, 2.5vw, 16px);
     font-weight: 300;
+}
+
+@media (max-width: 26.9rem) {
+    .homeHeroSection {
+        padding: 20px;
+    }
+    .homeHeroHeader {
+        font-size: 2rem;
+    }
+    .homeHeroText {
+        font-size: .5rem;
+        margin-bottom: 1rem;
+    }
+    .homeHeroBtn {
+        font-size: .5rem;
+    }
+    .gradientTxt {
+        min-width: 6.25rem;
+        line-height: 1rem
+    }
+    .gradientTxt1 {
+        font-size: 1rem;
+    }
+    .newEventImg {
+        min-width: 100%;
+    }
+    .newEventTxt {
+        font-size: .6rem;
+        line-height: .8rem;
+    }
+    .body1 {
+        margin-top: 1rem;
+    }
+    .subscribeCard, .donateCard {
+        width: 100%;
+    }
+    .greenBg, .greenBg1, .mosaicBg, .mosaicBg1, .homeHeroSection, .greenGradientSection {
+        padding: 1.25rem !important;
+        align-items: center;
+    }
+}
+@media (min-width: 27rem) {
+    .homeHeroSection {
+        padding: 20px;
+    }
+    .homeHeroHeader {
+        font-size: 2rem;
+    }
+    .homeHeroText {
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+    .homeHeroBtn {
+        font-size: .5rem;
+    }
+    .gradientTxt1 {
+        font-size: 1rem;
+    }
+    .subscribeCard, .donateCard {
+        width: 75%;
+    }
+    .body1 {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-top: 2rem;
+    }
+    .newEventHeader {
+        font-size: 1rem;
+    }
+    .newEventHeader, .newEventTxt {
+        line-height: 1rem;
+    }
+    .newEventImg {
+        min-width: 100%;
+        min-height: 15rem;
+    }
+    .eventPic, .greenBgPic {
+        min-width: 50%;
+        min-height: 15rem;
+    }
+    .eventHeaderTxt {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .eventHeaderBody {
+        min-height: 50%;
+        line-height: 1rem;
+    }
+    .donateCardBody {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .greenBgPic {
+        min-height: 20rem;
+    }
+    .greenBgTxt {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    .greenBgHeader {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+    .gradientTxt {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    .greenBg, .greenBg1, .mosaicBg, .mosaicBg1, .homeHeroSection, .greenGradientSection {
+        padding: 3.125rem;
+        align-items: center;
+    }
+}
+@media (min-width: 64rem) {
+    .homeHeroSection {
+        padding: 20px;
+    }
+    .homeHeroHeader {
+        font-size: 2rem;
+    }
+    .homeHeroText {
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+    .homeHeroBtn {
+        font-size: .5rem;
+    }
+    .gradientTxt1 {
+        font-size: 1rem;
+    }
+    .subscribeCard, .donateCard {
+        max-width: 75%;
+        min-width: 70%;
+    }
+    .body1 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-top: 2rem;
+    }
+    .newEventHeader {
+        font-size: 1rem;
+    }
+    .newEventHeader, .newEventTxt {
+        line-height: 1rem;
+    }
+    .newEventImg {
+        min-width: 100%;
+        min-height: 15rem;
+    }
+    .eventPic, .greenBgPic {
+        min-width: 50%;
+        min-height: 15rem;
+    }
+    .eventHeaderTxt {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .eventHeaderBody {
+        min-height: 75%;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .donateCardBody {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .greenBgPic {
+        min-height: 20rem;
+    }
+    .greenBgTxt {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    .greenBgHeader {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+    .gradientTxt {
+        font-size: 1.2rem;
+        min-width: 6.25rem;
+        line-height: 1.4rem;
+    }
+    .greenBg, .greenBg1, .mosaicBg, .mosaicBg1, .homeHeroSection, .greenGradientSection {
+        padding: 3.125rem;
+    }
+}
+@media (min-width: 90rem) {
+    .homeHeroSection {
+        padding: 20px;
+    }
+    .homeHeroHeader {
+        font-size: 5rem;
+    }
+    .homeHeroText {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .homeHeroBtn {
+        font-size: 1.2rem;
+    }
+    .gradientTxt {
+        min-width: 6.25rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+    .gradientTxt1 {
+        font-size: 2rem;
+    }
+    .subscribeCard, .donateCard {
+        max-width: 75%;
+        min-width: 70%;
+        padding: 6.25rem;
+    }
+    .body1 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-top: 2rem;
+    }
+    .newEventHeader {
+        font-size: 1rem;
+    }
+    .newEventHeader, .newEventTxt {
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .newEventImg {
+        min-width: 100%;
+        min-height: 30rem;
+    }
+    .eventPic, .greenBgPic {
+        min-width: 50%;
+        min-height: 30rem;
+    }
+    .eventHeaderTxt {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .eventHeaderBody {
+        min-height: 75%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .eventSectionHeader {
+        font-size: 2.5rem !important;
+        margin-bottom: 5rem !important;
+    }
+    .eventHeader1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-top: 5rem !important;
+        margin-bottom: 10rem !important;
+    }
+    .donateCardHeader {
+        font-size: 2rem;
+        padding-bottom: .5rem;
+    }
+    .donateCardBody {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .donateCardBtn {
+        font-size: 1.5rem;
+    }
+    .input {
+        font-size: 1.5rem;
+    }
+    .header1 {
+        font-size: 2rem;
+        padding-bottom: .5rem;
+    }
+    .greenBgPic {
+        min-height: 20rem;
+    }
+    .greenBgTxt {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .greenBgHeader {
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+        margin-bottom: 5rem !important;
+    }
+    .greenBg, .greenBg1, .mosaicBg, .mosaicBg1, .homeHeroSection, .greenGradientSection {
+        padding: 6.25rem !important;
+    }
+    .OFDesc {
+        font-size: 1.5rem;
+    }
+    .remgap2 {
+        gap: 2rem;
+    }
 }

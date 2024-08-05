@@ -1,10 +1,8 @@
 .w100 {
     width: 100%;
 }
-
 .eventsPage {
     background-image: url('../../Images/mosaic-bg.png');
-    padding: 50px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,29 +10,25 @@
     overflow: hidden;
 }
 .pageHeader {
-    text-align: center;
-    width: fit-content;
-    padding-right: 0px;
-    padding-bottom: 0px;
     border-bottom: 0px !important;
-    margin-bottom: 50px;
 }
 .accordion {
     width: 100%;
 }
 .eventGroup {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 .eventGroupHeaderTxt {
-    font-size: clamp(15px, 18px, 25px);
-    width: 100%;
+    font-size: 1.5rem;
+    width: fit-content;
+    text-wrap: nowrap;
     font-weight: 500;
     text-transform: uppercase;
 }
 .line {
     border: 0;
-    height: 1px;
+    height: 0.0625rem;
     background: #000;
     width: 100%;
     opacity: 1;
@@ -46,10 +40,10 @@
     width: 100%;
     align-items: center;
     gap: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 .eventImg {
-    min-width: 100%;
+    max-width: 100%;
     max-height: 300px;
     object-fit: cover;
     border-radius: 20px;
@@ -66,4 +60,22 @@
     padding-left: 25px;
     text-transform: uppercase;
     align-self: flex-start;
+}
+.eventTab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+@media (width < 37.5rem) {
+    .eventsPage {
+        padding: 50px 20px;
+    }
+    .eventGroupHeaderTxt {
+        font-size: 1.125rem;
+    }
+    .eventTab {
+        flex-direction: column;
+    }
 }
