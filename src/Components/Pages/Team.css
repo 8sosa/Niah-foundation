@@ -78,3 +78,22 @@
     border-bottom: .0625rem solid #000;
     margin-bottom: 2.8125rem;
 }
+
+@media (max-width: 26.9rem) {
+    
+}
+@media (min-width: 27rem) {
+    .heroHeader {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 64rem) {
+    .heroHeader {
+        font-size: 4rem;
+    }
+}
+@media (min-width: 90rem) {
+    .heroHeader {
+        font-size: 5rem;
+    }
+}
