@@ -1,84 +1,36 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, {useEffect} from 'react';
 import './Carousel.css';
 import { Col, Row } from 'react-bootstrap';
 import slideData from '../Json/testimonials.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function NiahCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const containerRef = useRef(null);
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Adjust the duration if needed
+  }, []);
 
   const slides = slideData;
-  const numSlides = slides.length;
-
-  const getPrevIndex = (index) => (index - 1 + numSlides) % numSlides;
-  const getNextIndex = (index) => (index + 1) % numSlides;
-
-  const prevIndex = getPrevIndex(currentIndex);
-  const nextIndex = getNextIndex(currentIndex);
-
-  useEffect(() => {
-    const container = containerRef.current;
-
-    if (container) {
-      const handleScroll = (event) => {
-        if (event.deltaY > 0) {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % numSlides);
-        } else if (event.deltaY < 0 ) {
-          setCurrentIndex((prevIndex) => (prevIndex - 1 +numSlides) % numSlides);
-        }
-      };
-  
-      container.addEventListener('wheel', handleScroll);
-  
-      return () => {
-        container.removeEventListener('wheel', handleScroll);
-      };
-    }
-  }, [numSlides]);
 
   return (
-    <div className='slider' ref={containerRef}>
-      <div className='slides-container'>
-        <div className='itemPrev'>
-          <Row className='idTop'>
-            <Col className='idCol'>
-              <img src={require('../Images/' + slides[prevIndex].src)} alt={slides[prevIndex].alt} className='itemImg' />
-            </Col>
-            <Col className='idCol'>
-              <h2 className='idHeader1 openSans'>{slides[prevIndex].header}</h2>
-              <span className='idHeaderTxt1 openSans'>{slides[prevIndex].subHeader}</span>
-            </Col>
-          </Row>
-          <p className='idBody1 openSans'>{slides[prevIndex].body}</p>
-          <span className='idFooter1 openSans'>{slides[prevIndex].footer}</span>
-        </div>
-        <div className='itemActive'>
-          <Row className='idTop'>
-            <Col className='idCol'>
-              <img src={require('../Images/' + slides[currentIndex].src)} alt={slides[currentIndex].alt} className='itemImg' />
-            </Col>
-            <Col className='idCol'>
-              <h2 className='idHeader openSans'>{slides[currentIndex].header}</h2>
-              <span className='idHeaderTxt openSans'>{slides[currentIndex].subHeader}</span>
-            </Col>
-          </Row>
-          <p className='idBody openSans'>{slides[currentIndex].body}</p>
-          <span className='idFooter openSans'>{slides[currentIndex].footer}</span>
-        </div>
-        <div className='itemNext'>
-          <Row className='idTop'>
-            <Col className='idCol'>
-              <img src={require('../Images/' + slides[nextIndex].src)} alt={slides[nextIndex].alt} className='itemImg' />            
-            </Col>
-            <Col className='idCol'>
-              <h2 className='idHeader1 openSans'>{slides[nextIndex].header}</h2>
-              <span className='idHeaderTxt1 openSans'>{slides[nextIndex].subHeader}</span>
-            </Col>
-          </Row>
-          <p className='idBody1 openSans'>{slides[nextIndex].body}</p>
-          <span className='idFooter1 openSans'>{slides[nextIndex].footer}</span>
-        </div>
-      </div>
+    <div className='slider' data-aos="fade-up">
+      {
+        slides.map((testimonial) => (
+          <div className='itemActive'>
+            <Row className='idTop'>
+              <Col className='idCol'>
+                <img src={require('../Images/' + testimonial.src)} alt={testimonial.alt} className='itemImg' />
+              </Col>
+              <Col className='idCol'>
+                <h2 className='idHeader openSans'>{testimonial.header}</h2>
+                <span className='idHeaderTxt openSans'>{testimonial.subHeader}</span>
+              </Col>
+            </Row>
+            <p className='idBody openSans'>{testimonial.body}</p>
+            <span className='idFooter openSans'>{testimonial.footer}</span>
+          </div>
+        ))
+      }
     </div>
   );
 }

@@ -1,6 +1,12 @@
 .contactContainer {
     background-image: url('../../Images/contactBg.png');
-    padding: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .pageHeader {
     font-size: clamp(18px, 20px, 40px);
@@ -27,11 +33,14 @@
     font-weight: 400;
 }
 .contactCard {
-    padding: 30px;
+    padding: 3rem;
     margin-top: 50px;
     border: 2px solid #000;
     border-radius: 25px;
     background-color: #EE9090;
+    min-width: fit-content;
+    width: 80%;
+    max-width: 100%;
 }
 .contactCardBtn {
     width: fit-content;
@@ -55,21 +64,45 @@
     font-weight: 400;
 }
 
-@media (max-width: 26.9rem) {
-    
-}
 @media (min-width: 27rem) {
     .pageHeader {
         font-size: 2rem;
+    }
+    .colHeader {
+        font-size: 1.5rem;
+    }
+    .colBody {
+        font-size: 1rem;
+    }
+    .contactContainer, .contactCard {
+        padding: 4rem;
     }
 }
 @media (min-width: 64rem) {
     .pageHeader {
         font-size: 2.5rem;
     }
+    .colHeader {
+        font-size: 2rem;
+    }
+    .colBody {
+        font-size: 1.2rem;
+    }
+    .contactContainer, .contactCard {
+        padding: 5rem;
+    }
 }
 @media (min-width: 90rem) {
     .pageHeader {
         font-size: 3rem;
+    }
+    .colHeader {
+        font-size: 2.2rem;
+    }
+    .colBody {
+        font-size: 1.2rem;
+    }
+    .contactContainer, .contactCard {
+        padding: 6rem;
     }
 }

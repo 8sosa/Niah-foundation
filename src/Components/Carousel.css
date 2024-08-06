@@ -22,51 +22,24 @@
     font-size: clamp(8px, 12px, 24px);
     text-align: end;
 }
-.idHeader1 {
-    font-size: clamp(8px, 12px, 24px);
-    text-align: start;
-}
-.idHeaderTxt1 {
-    font-size: clamp(6px, 8px, 16px);
-    text-align: start;
-}
-.idBody1 {
-    font-size: clamp(6px, 10px, 20px);
-    text-align: justify;
-}
-.idFooter1 {
-    font-size: clamp(6px, 8px, 16px);
-    text-align: end;
-}
 .slider {
-    position: relative;
-    width: 100%;
-    height: 500px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.slides-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
     overflow: scroll;
     width: 100%;
     height: 100%;
+    padding: 6rem;
 }
-
-.itemActive, .itemNext, .itemPrev {
+.itemActive{
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 75%;
     overflow: hidden;
-    transition: transform 0.5s ease;
     border: 2px solid #000;
     border-radius: 30px;
-    box-shadow: 0px 0px 20px 0px #0000008C;
+    box-shadow: 0px 0px 10px 0px #0000008C;
 }
 .itemActive {
     align-self: center;
@@ -74,20 +47,6 @@
     z-index: 2;
 }
 
-.itemPrev, .itemNext {
-    position: absolute;
-    height: 300px;
-    padding: 20px;
-    z-index: 1;
-}
-.itemPrev {
-    left: 0;
-    margin-left: 10%;
-}
-.itemNext {
-    right: 0;
-    margin-right: 10%;
-}
 .idTop {
     display: flex;
     flex-direction: row;
@@ -99,33 +58,119 @@
     align-items: flex-start;
     max-width: fit-content;
 }
-.itemImg1, .itemImg{
+.itemImg{
     border-radius: 50%;
     width: 50px;
     height: 50px;
     object-fit: cover;
-    box-shadow: 0px 4px 70px 0px #0000008C;
-}
-.itemImg {
-    width: 35px;
-    height: 35px;
+    box-shadow: 0px 2px 50px 0px #0000008C;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 26.9rem) {
     .slider {
-        height: 380px;
-    }
-    .itemPrev {
-        margin-left: -45%;
-        height: 200px;
-        width: 200px;
-    }
-    .itemNext {
-        margin-right: -45%;
-        height: 200px;
-        width: 200px;
+        padding: 3rem;
+        gap: 3rem;
     }
     .itemActive{
-        height: 300px;
+        padding: 2rem;
+        min-width: 20rem;
+        min-height: 20rem;
+    }
+    .itemImg {
+        width: 4rem;
+        height: 4rem;
+        box-shadow: 0px 5px 15px 0px #0000008C;
+    }
+    .idHeader {
+        font-size: 1.2rem;
+    }
+    .idHeaderTxt {
+        font-size: .7rem;
+    }
+    .idBody {
+        font-size: .8rem;
+    }
+    .idFooter {
+        font-size: .8rem;
+    }
+}
+@media (min-width: 27rem) {
+    .slider {
+        padding: 3rem;
+        gap: 3rem;
+    }
+    .itemActive{
+        padding: 3rem;
+        min-width: 40rem;
+        min-height: 25rem;
+    }
+    .itemImg {
+        width: 5rem;
+        height: 5rem;
+    }
+    .idHeader {
+        font-size: 2rem;
+    }
+    .idHeaderTxt {
+        font-size: 1.5rem;
+    }
+    .idBody {
+        font-size: 1.2rem;
+    }
+    .idFooter {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 64rem) {
+    .slider {
+        gap: 5rem;
+    }
+    .itemActive{
+        padding: 4rem;
+        min-width: 50rem;
+        min-height: 30rem;
+    }
+    .itemImg {
+        width: 7rem;
+        height: 7rem;
+    }
+    .idHeader {
+        font-size: 2rem;
+    }
+    .idHeaderTxt {
+        font-size: 1.5rem;
+    }
+    .idBody {
+        font-size: 1.2rem;
+    }
+    .idFooter {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 90rem) {
+    .slider {
+        gap: 5rem;
+    }
+    .itemActive{
+        padding: 4rem;
+        min-width: 50rem;
+        min-height: 30rem;
+    }
+    .itemImg {
+        width: 7rem;
+        height: 7rem;
+    }
+    .idHeader {
+        font-size: 2rem;
+    }
+    .idHeaderTxt {
+        font-size: 1.5rem;
+    }
+    .idBody {
+        font-size: 1.2rem;
+    }
+    .idFooter {
+        font-size: 1rem;
     }
 }

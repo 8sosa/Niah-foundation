@@ -34,12 +34,6 @@
     border-radius: 1.5625rem;
     width: 100%;
 }
-.inputField {
-    background-color: #fff;
-    border: 0.0625rem solid #000;
-    border-radius: .3125rem;
-    box-shadow: none;
-}
 .unitImg {
     border: .0625rem solid #000;
     border-radius: .3125rem;
@@ -65,4 +59,81 @@
 .unitFoot {
     font-size: .75rem;
     font-weight: 400;
+}
+
+@media (min-width: 27rem) {
+    .eventsPage {
+        padding: 3rem;
+    }
+    .volunteerImg {
+        max-height: 20rem;
+    }
+    .bodyBold {
+        font-size: .8rem;
+    }
+    .unitHead {
+        font-size: 2rem;
+    }
+    .unitBody {
+        font-size: 1rem;
+    }
+    .unitFoot {
+        font-size: 1.5rem;
+    }
+    .unitImg {
+        max-width: 80%;
+    }
+}
+@media (min-width: 64rem) {
+    .eventsPage {
+        padding: 4rem;
+    }
+    .volunteerImg {
+        max-height: 25rem;
+    }
+    .bodyBold {
+        font-size: 1.2rem;
+    }
+    .unitHead {
+        font-size: 3rem;
+    }
+    .unitBody {
+        font-size: 1.2rem;
+    }
+    .unitFoot {
+        font-size: 2rem;
+    }
+    .unitImg {
+        max-width: 80%;
+    }
+}
+@media (min-width: 90rem) {
+    .eventsPage {
+        padding: 6rem;
+    }
+    .volunteerImg {
+        max-height: 40rem;
+    }
+    .bodyBold {
+        font-size: 1.5rem;
+    }
+    .unitHead {
+        font-size: 3rem;
+    }
+    .unitBody {
+        font-size: 1.5rem;
+    }
+    .unitFoot {
+        font-size: 2rem;
+    }
+    .unitImg {
+        max-width: 80%;
+    }
+    .volunteerCard {
+        padding: 5rem;
+        border: .5rem solid #000;
+    }
+    .inputField::placeholder {
+        font-size: 1.5rem;
+    }
 }

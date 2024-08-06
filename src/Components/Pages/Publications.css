@@ -1,6 +1,7 @@
 .publicationImg {
     border: 1px solid #000;
     border-radius: 10px;
+    width: 100%;
 }
 .publicationBody, .publicationFooter, .publicationHeader {
     margin: 0px;
@@ -15,7 +16,6 @@
     font-size: clamp(8px, 10px, 12px);
     font-weight: 400;
     text-align: justify;
-    max-height: 80px;
     overflow: hidden;
 }
 .publicationFooter {
@@ -35,6 +35,7 @@
     padding: 50px 30px;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
 }
 .vlogBody {
     font-size: clamp(8px, 10px, 12px);
@@ -62,4 +63,47 @@
 }
 .z3 {
     z-index: 3;
+}
+
+@media (min-width: 27rem) {
+    .vlogs, .origins {
+        padding: 3rem;
+    }
+    .publicationHeader {
+        font-size: 1.2rem;
+    }
+    .publicationBody {
+        font-size: 1rem;
+    }
+    .publicationFooter {
+        font-size: .8rem;
+    }
+}
+@media (min-width: 64rem) {
+    .vlogs, .origins {
+        padding: 4.5rem;
+    }
+    .publicationHeader {
+        font-size: 1.5rem;
+    }
+    .publicationBody {
+        font-size: 1.2rem;
+    }
+    .publicationFooter {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 90rem) {
+    .vlogs, .origins {
+        padding: 6rem;
+    }
+    .publicationHeader {
+        font-size: 2rem;
+    }
+    .publicationBody {
+        font-size: 1.5rem;
+    }
+    .publicationFooter {
+        font-size: 1.2rem;
+    }
 }

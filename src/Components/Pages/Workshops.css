@@ -24,7 +24,6 @@
 }
 .subHeader {
     align-self: flex-start;
-    font-size: clamp(10px, 13px, 20px);
     border-bottom: 1px solid #000;
     margin-bottom: 30px;
 }
@@ -44,7 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .purpSection {
     display: flex;
@@ -56,28 +55,89 @@
 .sponsors {
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
+    gap: 1rem;
+}
+.sponsorImg {
+    width: fit-content;
+    min-width: 5rem;
 }
 .workshopGroupHeader {
     border-bottom: 0px !important;
 }
-
-@media (max-width: 26.9rem) {
-    
+.testiBg {
+    background-image: url('../../Images/mosaic-bg.png');
+    max-width: 100%;
+    padding: 3rem 0rem;
 }
+
+
 @media (min-width: 27rem) {
     .trainBody {
         font-size: 1rem;
+    }
+    .purpSection {
+        max-width: 100%;
+        padding: 4rem;
+    }
+    .sponsors {
+        gap: 2rem;
+    }
+    .sponsorImg {
+        min-width: 6rem;
+    }
+    .trainImg {
+        max-width: 15rem;
+        max-height: 20rem;
+    }
+    .donateCardBtn {
+        padding: .5rem 1.5rem;
+    }
+    .testiBg {
+        padding: 4rem 0rem;
     }
 }
 @media (min-width: 64rem) {
     .trainBody {
         font-size: 1.2rem;
     }
+    .purpSection {
+        max-width: 100%;
+        padding: 5rem;
+    }
+    .sponsorImg {
+        min-width: 8rem;
+    }
+    .trainImg {
+        max-width: 20rem;
+        max-height: 25rem;
+    }
+    .donateCardBtn {
+        padding: .5rem 1.5rem;
+    }
+    .testiBg {
+        padding: 5rem 0rem;
+    }
 }
 @media (min-width: 90rem) {
+    .purpSection {
+        max-width: 100%;
+        padding: 6rem;
+    }
     .trainBody {
         font-size: 1.5rem;
+    }
+    .sponsorImg {
+        min-width: 10rem;
+    }
+    .trainImg {
+        max-width: 25rem;
+        max-height: 30rem;
+    }
+    .donateCardBtn {
+        padding: .5rem 1.5rem;
+    }
+    .testiBg {
+        padding: 6rem 0rem;
     }
 }

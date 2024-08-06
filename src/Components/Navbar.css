@@ -4,6 +4,10 @@ a {
     text-decoration: none;
 }
 .niahNavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #fff;
     padding: 50px 25px;
 }
@@ -75,10 +79,6 @@ a {
 
 @media (max-width: 900px) {
     .niahNavbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
         padding: 10px;
     }
     .niahLogo {

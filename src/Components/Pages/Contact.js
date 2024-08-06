@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Col, Container, Form, Row } from 'react-bootstrap'
 import './Contact.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Contact() {
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Adjust the duration if needed
+      }, []);
+    
   return (
     <>
         <Container className='contactContainer'>
-            <h1 className='pageHeader raleway'>Contact Us</h1>
-            <Row>
+            <h1 className='pageHeader raleway asfs'>Contact Us</h1>
+            <Row data-aos="fade-up">
                 <Col className='d-flex flex-column'>
                     <h2 className='colHeader raleway'>CONTACT DETAILS</h2>
                     <span className='colBody openSans'>General: info@niahfoundation.org</span>
@@ -19,8 +25,8 @@ export default function Contact() {
                     <span className='colBody openSans'>Plot Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Lagos. Nigeria.</span>
                 </Col>
             </Row>
-            <div className='contactCard'>
-                <Form>
+            <div className='contactCard' data-aos="zoom-out">
+                <Form className='w100'>
                     <Form.Group className="mb-3" controlId="Enquirer Name">
                         <Form.Control type="text" placeholder="Name *" className='inputField raleway'/>
                     </Form.Group>

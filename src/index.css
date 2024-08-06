@@ -8,6 +8,21 @@
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
 }
+.asfs {
+  align-self: flex-start;
+}
+.jcc {
+  justify-content: center;
+}
+.jcfs {
+  justify-content: flex-start;
+}
+.jcfe {
+  justify-content: flex-end;
+}
+.jcse {
+  justify-content: space-evenly;
+}
 .jcsb {
   justify-content: space-between;
 }
