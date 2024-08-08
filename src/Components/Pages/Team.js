@@ -33,24 +33,24 @@ export default function Team() {
       </Container>
       <Container className='team origins'>
         <h1 className='yt pageHeader raleway shadow1'>THE FOUNDATION TEAM</h1>
-        <Row className='d-flex w100 jcse'>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-left">
+        <Row className='d-flex w100 jcse' data-aos="fade-up">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway shadow1'>PERSON <span className='bold1'>NAME</span></h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-right">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway shadow1'>PERSON <span className='bold1'>NAME</span></h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-left">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway shadow1'>PERSON <span className='bold1'>NAME</span></h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-right">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway shadow1'>PERSON <span className='bold1'>NAME</span></h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-left">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway shadow1'>PERSON <span className='bold1'>NAME</span></h3>
           </Col>
@@ -58,7 +58,7 @@ export default function Team() {
       </Container>
       <Container className='greenBg1'>
         <h1 className='sectionHeader'>VOLUNTEER OF THE MONTH</h1>
-        <Row data-aos="fade-up">
+        <Row>
           <Col className='d-flex flex-column align-items-center fitted'>
           <img src={Vlog} alt='CHENANIAH BAMISHILE' className='founder1Img' />
           <h3 className='teamBody raleway shadow1'>PERSON <span className='bold1'>NAME</span></h3>

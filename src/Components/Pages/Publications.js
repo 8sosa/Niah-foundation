@@ -16,7 +16,7 @@ export default function Publications() {
     <>
       <Container className='origins'>
           <h1 className='pageHeader raleway'>Publications</h1>
-          <Row className='w100 mb-4' data-aos="fade-up">
+          <Row className='w100 mb-4'>
             <Col className='fitted'><img src={Publi} alt='A publication' className='publicationImg' /></Col>
             <Col className='d-flex flex-column jcsa'>
               <h2 className='publicationHeader raleway'>Sed gravida mauris in lobortis tempus. Etiam ac feugiat quam.</h2>
@@ -24,7 +24,7 @@ export default function Publications() {
               <span className='publicationFooter raleway'>Read More...</span>
             </Col>
           </Row>
-          <Row className='w100 mb-4' data-aos="fade-up">
+          <Row className='w100 mb-4'>
             <Col className='fitted'><img src={Publi} alt='A publication' className='publicationImg' /></Col>
             <Col className='d-flex flex-column jcsa'>
               <h2 className='publicationHeader raleway'>Sed gravida mauris in lobortis tempus. Etiam ac feugiat quam.</h2>
@@ -32,7 +32,7 @@ export default function Publications() {
               <span className='publicationFooter raleway'>Read More...</span>
             </Col>
           </Row>
-          <Row className='w100 mb-4' data-aos="fade-up">
+          <Row className='w100 mb-4'>
             <Col className='fitted'><img src={Publi} alt='A publication' className='publicationImg' /></Col>
             <Col className='d-flex flex-column jcsa'>
               <h2 className='publicationHeader raleway'>Sed gravida mauris in lobortis tempus. Etiam ac feugiat quam.</h2>
@@ -43,28 +43,28 @@ export default function Publications() {
       </Container>
       <Container className='vlogs'>
         <h1 className='yt pageHeader raleway'>VLOGS</h1>
-        <Row className='d-flex w100 jcc'>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-right">
+        <Row className='d-flex w100 jcc' data-aos="fade-up">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway'>Proin non metus diam.</h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-left">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway'>Proin non metus diam.</h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-right">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway'>Proin non metus diam.</h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-left">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway'>Proin non metus diam.</h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-right">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway'>Proin non metus diam.</h3>
           </Col>
-          <Col className='d-flex flex-column jcsb flex1 fitted mb-3' data-aos="fade-up-left">
+          <Col className='d-flex flex-column jcsb flex1 fitted mb-3'>
             <img src={Vlog} alt='Title of the vlog' className='teamImg' />
             <h3 className='yt teamBody raleway'>Proin non metus diam.</h3>
           </Col>

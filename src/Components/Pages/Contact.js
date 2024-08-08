@@ -13,7 +13,7 @@ export default function Contact() {
     <>
         <Container className='contactContainer'>
             <h1 className='pageHeader raleway asfs'>Contact Us</h1>
-            <Row data-aos="fade-up">
+            <Row>
                 <Col className='d-flex flex-column'>
                     <h2 className='colHeader raleway'>CONTACT DETAILS</h2>
                     <span className='colBody openSans'>General: info@niahfoundation.org</span>

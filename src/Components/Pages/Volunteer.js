@@ -17,7 +17,7 @@ export default function Volunteer() {
       <Container className='greenBg1'>
         <h1 className='pageHeader raleway'>Volunteer</h1>
         <Row className='d-flex flex-column mb-4'>
-          <Col data-aos="zoom-in">
+          <Col>
             <img src={Volunt} alt='People volunteering' className='volunteerImg' />
           </Col>
           <Col className='d-flex flex-column align-items-center'>

@@ -90,11 +90,11 @@ export default function Workshops() {
       <Container className='purpSection'>
         <h1 className='sponsorHeader pageHeader raleway'>OUR SPONSORS</h1>
         <Row className='sponsors'>
-          <img src={Sponsor} alt='logo' className='sponsorImg' data-aos="zoom-in"/>
-          <img src={Sponsor} alt='logo' className='sponsorImg' data-aos="zoom-in"/>
-          <img src={Sponsor} alt='logo' className='sponsorImg' data-aos="zoom-in"/>
-          <img src={Sponsor} alt='logo' className='sponsorImg' data-aos="zoom-in"/>
-          <img src={Sponsor} alt='logo' className='sponsorImg' data-aos="zoom-in"/>
+          <img src={Sponsor} alt='logo' className='sponsorImg'/>
+          <img src={Sponsor} alt='logo' className='sponsorImg'/>
+          <img src={Sponsor} alt='logo' className='sponsorImg'/>
+          <img src={Sponsor} alt='logo' className='sponsorImg'/>
+          <img src={Sponsor} alt='logo' className='sponsorImg'/>
         </Row>
       </Container>
       <Container className='testiBg'>
