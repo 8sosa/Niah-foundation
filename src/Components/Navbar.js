@@ -16,13 +16,13 @@ export default function NiahNavbar() {
         <Container className='niahNavbarContainer'>
           <Navbar.Brand href="/"><img src={Logo} alt='Niah Foundation' className='niahLogo' /></Navbar.Brand>
           <div className='navbox1'>
-            <a href="/" className="navLink" activeClassName='active' aria-label="Home">Home</a>
-            <a href="/about-us" className="navLink" activeClassName='active' aria-label="About Us">About Us</a>
-            <a href="/events" className="navLink" activeClassName='active' aria-label="events">Events</a>
-            <a href="/the-team" className="navLink" activeClassName='active' aria-label="Team">The Team</a>
-            <a href="/volunteer" className="navLink" activeClassName='active' aria-label="Volunteer">Volunteer</a>
-            <a href="/publications" className="navLink" activeClassName='active' aria-label="Publications">Publications</a>
-            <a href="/workshops" className="navLink" activeClassName='active' aria-label="Workshops">Workshops</a>
+            <a href="/" className="navLink" aria-label="Home">Home</a>
+            <a href="/about-us" className="navLink" aria-label="About Us">About Us</a>
+            <a href="/events" className="navLink" aria-label="events">Events</a>
+            <a href="/the-team" className="navLink" aria-label="Team">The Team</a>
+            <a href="/volunteer" className="navLink" aria-label="Volunteer">Volunteer</a>
+            <a href="/publications" className="navLink" aria-label="Publications">Publications</a>
+            <a href="/workshops" className="navLink" aria-label="Workshops">Workshops</a>
             {/* <a href="/community" className="navLink" aria-label="Community">Community</a> */}
             <a href="/contact-us" className="navLink" aria-label="Contact Us">Contact Us</a>
           </div>
@@ -49,15 +49,3 @@ export default function NiahNavbar() {
       </Navbar>
   );
 }
-
-
-<Nav className='navLinks'>
-              <Nav.Link as={NavLink} to='/' exact className='navLink' activeClassName='active'>Home</Nav.Link>
-              <Nav.Link as={NavLink} to="/About-Us" className='navLink' activeClassName='active'>About Us</Nav.Link>
-              <NavDropdown className='navLink' title="Services">
-                <NavDropdown.Item as={NavLink} to="/services" activeClassName='active'>Our Services</NavDropdown.Item>
-                <NavDropdown.Item as={NavLink} to="/Consultations" activeClassName='active'>Consultation</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link as={NavLink} to="/projects" className='navLink' activeClassName='active'>Testimonials</Nav.Link>
-              <Nav.Link as={NavLink} to="/teams" className='navLink' activeClassName='active'>Teams</Nav.Link>
-            </Nav>
