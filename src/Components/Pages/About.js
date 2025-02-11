@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react'
 import { Accordion, Col, Container, Row } from 'react-bootstrap'
 import './About.css'
-import Founder from '../../Images/founder.png'
-import Event from '../../Images/event.png'
+import Founder from '../../Images/niah.jpg'
+import Med from '../../Images/med.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Placeholder from '../../Images/ph.png'
+
 
 export default function About() {
   useEffect(() => {
@@ -16,26 +18,30 @@ export default function About() {
         <Container className='hero' id="aboutHero"><h1 className='heroHeader raleway'>NIAH FOUNDATION</h1></Container>
         <Container className='origins'>
           <h1 className='originsHeader pageHeader raleway'>NF’s ORIGINS</h1>
-          <p className='originsBody trainBody openSans'>Sed vitae ipsum dictum odio consectetur eleifend ut sed mi. Curabitur tincidunt sed quam ac elementum. Fusce posuere facilisis turpis, ut ullamcorper turpis semper sed. Nullam id massa vel dui ornare dignissim. Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</p>
+          <p className='originsBody trainBody openSans'>Niah Foundation began as a spark of passion during Chenaniah Bamishile's university years. With a deep concern for mental health awareness and a special affinity for children with special needs, Chenaniah noticed a recurring pattern: friends and peers confided in her about struggles with anxiety, depression, and other challenges, often without the resources or knowledge to address them.</p>
+          <p className='originsBody trainBody openSans'>This realisation inspired the launch of the Green Hearts Initiative, a social media campaign promoting mental health conversations on campus. The initiative included an interview series featuring individuals living with mental health conditions, providing insight into their experiences and reducing stigma through empathy and education. Its success marked the foundation’s first step in addressing mental health issues.</p>
+          <p className='originsBody trainBody openSans'>After university, the challenge became scaling these efforts beyond the campus. Recognising that many in rural communities prioritised basic needs like food and education over mental health, the foundation evolved its approach. Niah Foundation began addressing immediate community needs—renovating schools, distributing food, and providing healthcare—while integrating mental health education into these efforts. By meeting people where they were, the foundation created a pathway for meaningful conversations and connections around mental well-being.</p>
+          <p className='originsBody trainBody openSans'>Today, Niah Foundation continues to drive change, bridging the gap between basic needs and mental health awareness, and connecting communities with affordable resources to foster holistic wellness. Since 2021, the foundation has been a beacon of hope, prioritizing kindness and impactful change.</p>
           <Accordion defaultActiveKey="0" className='accordion' data-aos="fade-up">
             <Accordion.Item eventKey="0" className='aboutHeader'>
               <Accordion.Header>Our MISSION</Accordion.Header>
               <Accordion.Body className='aboutBody'>
-                <p className='OFDesc'>To bring mental health awareness into every African home and as a result promote the inclusion of special needs individuals into systems in the continent.</p>
+                <p className='OFDesc'>To integrate mental health awareness into African households, advancing the inclusion of special needs individuals across communities.</p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1" className='aboutHeader'>
               <Accordion.Header>Our VISSION</Accordion.Header>
               <Accordion.Body className='aboutBody'>
-                <p className='OFDesc'>To be the foremost voice and movement on mental health in Africa.</p>
+                <p className='OFDesc'>To lead Africa's conversation on mental health, shaping inclusive systems and sustainable change.</p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2" className='aboutHeader'>
               <Accordion.Header>Our OBJECTIVES</Accordion.Header>
               <Accordion.Body className='aboutBody'>
                 <ul>
-                  <li><p className='OFDesc'>Empowering communities through compassion and action. Our mission is to drive positive change by fostering education, supporting mental health, and cultivating a spirit of unity.</p></li>
-                  <li><p className='OFDesc'>Empowering communities through compassion and action. Our mission is to drive positive change by fostering education, supporting mental health, and cultivating a spirit of unity.</p></li>
+                  <li><p className='OFDesc'>Raise awareness of mental health in underrepresented communities.</p></li>
+                  <li><p className='OFDesc'>Champion the inclusion of special needs individuals.</p></li>
+                  <li><p className='OFDesc'>Build collaborative systems of care and support.</p></li>
                 </ul>
               </Accordion.Body>
             </Accordion.Item>
@@ -44,34 +50,33 @@ export default function About() {
         <Container className='founder' >
             <h1 className='founderHeader subHeader raleway'>THE <span className='founderHeaderBold'>FOUNDER</span></h1>
             <img src={Founder} alt='the founder - Chenaniah Bamishile' className='founderPic'/>
-            <div className='mt-5' data-aos="fade-up">
-              <p className='founderBody OFDesc'>Quisque ac aliquet augue, eget maximus eros. Morbi nisi lacus, placerat vitae efficitur nec, ullamcorper eget sem. Nam fringilla mattis accumsan. Praesent id urna finibus sapien blandit ultricies. Aenean ultrices justo a turpis vulputate maximus. Aliquam elementum fermentum dolor quis aliquam. Aliquam sed nisl sem. Ut vel rutrum sem. Vestibulum at tristique ex. Nam fermentum odio tempus tristique eleifend. Vivamus vel risus orci.</p> 
-              <p className='founderBody OFDesc'>Donec pharetra ullamcorper nunc. Phasellus nec gravida massa. Donec tempus vel ex eu venenatis. Mauris non pulvinar tortor. Aliquam bibendum massa nisl, quis vestibulum nisi aliquet non. Donec tincidunt dui libero. Fusce non commodo turpis. Nulla quis.</p> 
+            <div className='mt-5'>
+              <p className='founderBody OFDesc'>Niah Foundation was founded by Chenaniah Bamishile, a passionate mental health advocate dedicated to creating lasting change. Under her leadership, the foundation combines addressing immediate needs with spreading mental health awareness. Programs range from school renovations and food distribution to educating girls on mental health and empowering them with life skills.</p> 
+              <p className='founderBody OFDesc'>Chenaniah’s vision drives Niah Foundation’s mission to foster inclusion and awareness. Her commitment to kindness, alongside her extensive experience as an HR consultant, volunteer, and youth leader, ensures that the foundation remains at the forefront of mental health advocacy.</p> 
             </div>
         </Container>
         <Container className='origins'>
-          <h1 className='eventHeader subHeader raleway' id="eventHeader" data-aos="fade-up">OUR <span className='founderHeaderBold'>IMPACT</span></h1>
-          <Row className='d-flex flex-row align-items-center mb-3' data-aos="fade-up">
-            <Col className='fitted'><img src={Event} alt='A past event' className='eventImg'/></Col>
+          <h1 className='eventHeader subHeader raleway' id="eventHeader">OUR <span className='founderHeaderBold'>IMPACT</span></h1>
+          <Row className='d-flex flex-row align-items-center mb-3'>
+            <Col className='fitted'><img src={Med} alt='A past event' className='eventImg'/></Col>
             <Col>
-              <h3 className='eventHeaderTxt'>SOME PAST EVENT</h3>
-              <p className='eventHeaderBody'>Quisque ac aliquet augue, eget maximus eros. Morbi nisi lacus, placerat vitae efficitur nec, ullamcorper eget sem. Nam fringilla mattis accumsan. Praesent id urna finibus sapien blandit ultricies. Aenean ultrices justo a turpis vulputate maximus. Aliquam elementum fermentum dolor quis aliquam. Aliquam sed nisl sem. Ut vel rutrum sem. Vestibulum at tristique ex. Nam fermentum odio tempus tristique eleifend. Vivamus vel risus orci.</p>
+              <h3 className='eventHeaderTxt'>Medical Outreach (#SarahGoesToSchool):</h3>
+              <p className='eventHeaderBody'>On the 30th of September, we were able to provide medication, free consultations, blood pressure tests and more to about 150 beneficiaries in our target community in Alagbado. Our medical outreach was not just about providing healthcare; it became a celebration of hope. Sarah, the daughter of one of our beneficiaries, became the first recipient of our #SarahGoesToSchool campaign. As fate would have it, it was also her birthday, and thanks to the incredible support of our volunteers and donors, we raised enough funds to enrol Sarah in school.</p>
             </Col>
           </Row>
-          <Row className='d-flex flex-row align-items-center mb-3' data-aos="fade-up">
-            <Col className='fitted'><img src={Event} alt='A past event' className='eventImg'/></Col>
+          <Row className='d-flex flex-row align-items-center mb-3'>
+            <Col className='fitted'><img src={Placeholder} alt='A past event' className='eventImg'/></Col>
             <Col>
-              <h3 className='eventHeaderTxt'>SOME PAST EVENT</h3>
-              <p className='eventHeaderBody'>Quisque ac aliquet augue, eget maximus eros. Morbi nisi lacus, placerat vitae efficitur nec, ullamcorper eget sem. Nam fringilla mattis accumsan. Praesent id urna finibus sapien blandit ultricies. Aenean ultrices justo a turpis vulputate maximus. Aliquam elementum fermentum dolor quis aliquam. Aliquam sed nisl sem. Ut vel rutrum sem. Vestibulum at tristique ex. Nam fermentum odio tempus tristique eleifend. Vivamus vel risus orci.</p>
+              <h3 className='eventHeaderTxt'>Blood Drive:</h3>
+              <p className='eventHeaderBody'>We contributed to life-saving efforts at Massey Children's Hospital by donating pints of blood during our impactful blood drive on the 2nd of December.</p>
             </Col>
           </Row>
-          <a href='/events' className='eventHeaderTxt align-self-end mb-5' data-aos="fade-up">View more...</a>
+          <a href='/events' className='eventHeaderTxt align-self-end mb-5'>View more...</a>
           <h2 className='eventHeader subHeader raleway' id="eventHeader">ACHIEVEMENTS</h2>
           <ul>
-            <li className='newEventTxt mb-2'>Nunc id metus ornare, malesuada mauris ut, vestibulum diam.</li>
-            <li className='newEventTxt mb-2'>Donec et augue tempus elit imperdiet tristique at sed lorem.</li>
-            <li className='newEventTxt mb-2'>Praesent hendrerit quam vitae lorem bibendum, ac placerat ante sodales.</li>
-            <li className='newEventTxt mb-2'>Mauris id justo viverra lacus vestibulum aliquet nec et enim.</li>
+            <li className='newEventTxt mb-2'>Community Outreach: Addressed immediate needs like food, education, and healthcare while integrating mental health education into rural communities.</li>
+            <li className='newEventTxt mb-2'>Resource Connection: Linked individuals and communities with affordable mental wellness resources to improve access and support.</li>
+            <li className='newEventTxt mb-2'>Proven Impact: Over four years of transforming lives through education, advocacy, and community-driven solutions.</li>
           </ul>
         </Container>
     </>

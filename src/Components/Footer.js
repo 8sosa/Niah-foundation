@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
 import {Container} from 'react-bootstrap';
-import Logo from '../Images/logoYt.png'
+import Logo from '../Images/logoNoBg.png'
 
 function NiahFooter() {
   return (
@@ -11,10 +11,10 @@ function NiahFooter() {
                 <div className='footerLinkCol'>
                     <span className='footerLinkHeader'>QUICK <span className='peach'>LINKS</span></span>
                     <a href="#top" className='footerLink'>Volunteer</a>
-                    <a href="#top" className='footerLink'>Workshops</a>
+                    {/* <a href="#top" className='footerLink'>Workshops</a> */}
                     <a href="#top" className='footerLink'>Community</a>
                     <a href="#top" className='footerLink'>Activities</a>
-                    <a href="#top" className='footerLink'>Publications</a>
+                    {/* <a href="#top" className='footerLink'>Publications</a> */}
                 </div>
                 <div className='footerLinkCol1'>
                     <span className='footerLinkHeader'>CONTACT <span className='peach'>US</span></span>

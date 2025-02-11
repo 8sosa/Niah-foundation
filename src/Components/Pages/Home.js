@@ -1,8 +1,12 @@
 import React, {useEffect} from 'react';
 import './Home.css';
-import { Col, Row } from 'react-bootstrap';
+import { Button, Col, Form, Row } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import MissionImg from '../../Images/Picture2.png'
+import TeamImg from '../../Images/hometeam.jpg'
+import Placeholder from '../../Images/ph.png'
+
 
 
 export default function Home() {
@@ -15,7 +19,7 @@ export default function Home() {
     <>
         <section className='homeHeroSection'>
             <h1 className='homeHeroHeader'>NIAH FOUNDATION</h1>
-            <p className='homeHeroText'>“Empowering communities through compassion and action. Our mission is to drive positive change by fostering education, supporting mental health, and cultivating a spirit of unity. Together, we strive to create a brighter future for all, one act of kindness at a time." - Chat GPT</p>
+            <p className='homeHeroText'>“Empowering communities through compassion and action. At Niah Foundation, we champion mental health awareness, special needs inclusion, and holistic wellness for communities across Nigeria. Let’s build a world where every voice matters and every action inspires change.”</p>
             <div className='homeHeroBtnBox'>
                 <div className='homeHeroBtn'>CURIOUS</div>
                 <div className='homeHeroBtn'>INTERESTED?</div>
@@ -24,82 +28,85 @@ export default function Home() {
         <section className='greenGradientSection mt-4'>
           <Row className='w100'>
             <Col className='col1'>
-              <span className='gradientTxt' > <span className='gradientTxtSub'>34%</span> Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</span>
-              <h3 className='gradientTxt1'>SOME <span className='gradientTxt1sub'>MAGAZINE</span></h3>
+                <span className='gradientTxt gradientTxtSub'>1 in 5 Nigerians face mental health challenges annually</span>
+                <span className='gradientTxt'>We’re committed to breaking the stigma and providing support through awareness and action.</span>
             </Col>
             <Col className='col2'>
-              <span className='gradientTxt'>  <span className='gradientTxtSub'>40 million</span> Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</span>
-              <h3 className='gradientTxt1'>SOME <span className='gradientTxt1sub'>MAGAZINE</span></h3>
+                <span className='gradientTxt gradientTxtSub'>40+ Children Empowered Through Education and Outreach</span>
+                <span className='gradientTxt'>From skill empowerment programs for girls to mental health education in public schools and halfway homes for survivors, we’re shaping brighter futures.</span>
             </Col>
             <Col className='col3'>
-              <span className='gradientTxt'> Phasellus sit amet laoreet nunc, sed <span className='gradientTxtSub'>12,000</span> diam. Ut at quam sit amet diam mattis interdum nec vel.</span>
-              <h3 className='gradientTxt1'>SOME <span className='gradientTxt1sub'>MAGAZINE</span></h3>
+                <span className='gradientTxt gradientTxtSub'>3,000+ Lives Impacted</span>
+                <span className='gradientTxt'>Through mental health campaigns, workshops, and resources.</span>
             </Col>
           </Row>
         </section>
-        <section className='mosaicBg mt-5 mb-5'>
+        <section className='mosaicBg mt-5 mb-5 d-flex flex-column gap-5'>
           <h1 className='OFHeader'>Our <span className='peachHeader'>Foundation</span></h1>
-          <p className='OFDesc mt-4'>“Empowering communities through compassion and action. Our mission is to drive positive change by fostering education, supporting mental health, and cultivating a spirit of unity. Together, we strive to create a brighter future for all, one act of kindness at a time." - Chat GPT</p>
-          <Row className='w100' data-aos="fade-up">
-            <Col className='d-flex flex-column justify-content-space-between'>
+          <p className='OFDesc mt-4'>Driving inclusion, fostering mental health awareness, and inspiring systemic change for special needs communities in Africa. Together, we nurture compassion, equity, and unity for a brighter tomorrow.</p>
+          <Row className='w100 gap-5'>
+            <Col xs={12} md={6} className='d-flex flex-column gap-5'>
               <div className='boxDiv'>
                 <h2 className='peachHeader1'>Mission</h2>
-                <p className='OFDesc'>To bring mental health awareness into every African home and as a result promote the inclusion of special needs individuals into systems in the continent.</p>
+                <p className='OFDesc'>To integrate mental health awareness into African households, advancing the inclusion of special needs individuals across communities.</p>
               </div>
               <div className='boxDiv m-0'>
                 <h2 className='peachHeader1'>VISION</h2>
-                <p className='OFDesc' >To be the foremost voice and movement on mental health in Africa.</p>
+                <p className='OFDesc' >To lead Africa's conversation on mental health, shaping inclusive systems and sustainable change.</p>
               </div>
             </Col>
-            <Col className='MissionImgBox'></Col>
+            <Col>
+                <img src={MissionImg} alt='Us doing good' className='MissionImgBox'/>
+            </Col>
           </Row>
-          <div className='boxDiv1' data-aos="fade-up">
+          <div className='boxDiv1'>
             <h2 className='peachHeader1'>OBJECTIVES</h2>
-            <p className='OFDesc'>Empowering communities through compassion and action. Our mission is to drive positive change by fostering education, supporting mental health, and cultivating a spirit of unity.</p>
-            <p className='OFDesc'>Empowering communities through compassion and action. Our mission is to drive positive change by fostering education, supporting mental health, and cultivating a spirit of unity.</p>
+            <p className='OFDesc'>Raise awareness of mental health in underrepresented communities.</p>
+            <p className='OFDesc'>Champion the inclusion of special needs individuals.</p>
+            <p className='OFDesc'>Build collaborative systems of care and support.</p>
           </div>
-          <span className='OFDesc mb-4' data-aos="fade-up">* Did you know NIAH FOUNDATION was able to help 300 women blah blah </span>
+          <span className='OFDesc mb-4' data-aos="fade-up">* Did you know that the Niah Foundation has transformed lives across Nigeria by supporting over 300 women, including widows and survivors of domestic violence, through mental health resources, food donation drives, and empowerment programs?</span>
         </section>
         <section className='greenBg pt-5 pb-5'>
           <h1 className='greenBgHeader mb-4 mt-3'>NIAH FOUNDATION TEAM</h1>
-          <Row className='greenBgRow mb-3 remgap2' data-aos="fade-up">
-            <Col className='greenBgPic'></Col>
-            <Col className='greenBgTxt'>Sed vitae ipsum dictum odio consectetur eleifend ut sed mi. Curabitur tincidunt sed quam ac elementum. Fusce posuere facilisis turpis, ut ullamcorper turpis semper sed. Nullam id massa vel dui ornare dignissim. Phasellus sit amet laoreet nunc, sed vehicula diam. Ut at quam sit amet diam mattis interdum nec vel.</Col>
+          <Row className='greenBgRow mb-3 remgap2'>
+            <Col xs={12} md={6}><img src={TeamImg} alt='Us doing good' className='greenBgPic'/></Col>
+            <Col className='greenBgTxt d-flex flex-column justify-content-center'>Meet the passionate individuals driving change. Our diverse team is dedicated to promoting mental health awareness, inclusion, and holistic well-being across Africa. With expertise spanning advocacy, education, and community outreach, we strive to create a sustainable impact. Together, we address pressing needs, empower marginalised groups, and champion the integration of mental health into everyday life.</Col>
           </Row>
         </section>
-        <section className='mosaicBg mt-4 pb-5 d-flex flex-column'>
+        <section className='mosaicBg mt-4 pb-5 d-flex flex-column'  data-aos="fade-up">
           <h1 className='eventSectionHeader mb-4 mt-4'>PAST EVENTS</h1>
-          <Row className='mb-3 w100 remgap2' data-aos="fade-up">
-            <Col>
-              <h2 className='eventHeaderTxt'>2023 BOOK DONATION DRIVE</h2>
-              <p className='eventHeaderBody'>Curabitur quis fermentum nunc, bibendum faucibus velit. Fusce sit amet sem fringilla, accumsan mi non, vestibulum arcu. Nunc in tristique arcu. Nunc eleifend tellus vitae risus pulvinar varius. Cras consequat scelerisque dapibus.</p>
+          <Row className='mb-3 w100 remgap2'>
+            <Col md={8}>
+              <h2 className='eventHeaderTxt'>A Pad for Her Outreach:</h2>
+              <p className='eventHeaderBody'>At Prismoni Comprehensive High School, our "A Pad for Her" initiative successfully provided menstrual hygiene products to 100 girls, ensuring their continued access to education without disruptions.</p>
             </Col>
-            <Col className='eventPic'></Col>
+            <Col><img src={Placeholder} alt='Us doing good' className='eventPic'/></Col>
           </Row>
-          <Row className='w100 remgap2' data-aos="fade-up">
-            <Col>
-              <h2 className='eventHeaderTxt'>2023 BOOK DONATION DRIVE</h2>
-              <p className='eventHeaderBody'>Curabitur quis fermentum nunc, bibendum faucibus velit. Fusce sit amet sem fringilla, accumsan mi non, vestibulum arcu. Nunc in tristique arcu. Nunc eleifend tellus vitae risus pulvinar varius. Cras consequat scelerisque dapibus.</p>
+          <Row className='w100 remgap2'>
+            <Col md={8}>
+              <h2 className='eventHeaderTxt'>School Revamp:</h2>
+              <p className='eventHeaderBody'>Prismoni Comprehensive High School underwent a transformative makeover as we painted its walls and built new tables, creating a conducive and uplifting learning environment.</p>
             </Col>
-            <Col className='eventPic'></Col>
+            <Col><img src={Placeholder} alt='Us doing good' className='eventPic'/></Col>
           </Row>
-          <a href='/events' className='eventHeaderTxt align-self-end mb-5' data-aos="fade-up">View more...</a>
-          <div className='donateCard mb-4' data-aos="zoom-in">
+          <a href='/events' className='eventHeaderTxt align-self-end mb-5'>View more...</a>
+          <div className='donateCard mb-4'>
             <h1 className='donateCardHeader'>Make a <span className='green'>Donation</span></h1>
-            <p className='donateCardBody'>Integer non elementum magna. Duis rhoncus odio non iaculis mollis. Integer facilisis sollicitudin urna a pretium. Nulla efficitur luctus tristique. Sed iaculis, mi ut sagittis varius, justo lorem dignissim velit, efficitur pharetra nunc eros at velit.</p>
+            <p className='donateCardBody'>Your contribution fuels hope and change. By supporting Niah Foundation, you are empowering mental health awareness, special needs inclusion, and holistic wellness initiatives across communities in Africa.</p>
             <button className='donateCardBtn'>Donate Now</button>
           </div>
         </section>
-        <section className='greenBg1 pt-5 pb-5'>
+        {/* <section className='greenBg1 pt-5 pb-5'>
           <h1 className='eventHeader1 mb-4 mt-2'>FUTURE EVENTS</h1>
-            <Row className='mb-3 w100 remgap2' data-aos="fade-up">
+            <Row className='mb-3 w100 remgap2' >
               <Col>
                 <h2 className='eventHeaderTxt'>2024 BOOK DONATION DRIVE</h2>
                 <p className='eventHeaderBody'>Curabitur quis fermentum nunc, bibendum faucibus velit. Fusce sit amet sem fringilla, accumsan mi non, vestibulum arcu. Nunc in tristique arcu. Nunc eleifend tellus vitae risus pulvinar varius. Cras consequat scelerisque dapibus.</p>
               </Col>
               <Col className='eventPic'></Col>
             </Row>
-            <Row className='w100 remgap2' data-aos="fade-up">
+            <Row className='w100 remgap2' >
               <Col>
                 <h2 className='eventHeaderTxt'>2024 BOOK DONATION DRIVE</h2>
                 <p className='eventHeaderBody'>Curabitur quis fermentum nunc, bibendum faucibus velit. Fusce sit amet sem fringilla, accumsan mi non, vestibulum arcu. Nunc in tristique arcu. Nunc eleifend tellus vitae risus pulvinar varius. Cras consequat scelerisque dapibus.</p>
@@ -124,10 +131,10 @@ export default function Home() {
                 <span className='newEventTxt'>10th April 2025 - Jakande, Lekki</span>
               </Col>
             </Row>
-        </section>
+        </section> */}
         <section className='mosaicBg1 mt-4 pb-5 d-flex flex-column align-items-center'>
-          <h1 className='header1'>WHAT THE STREETS ARE SAYING</h1>
-          <Row className='remgap2' data-aos="fade-up">
+          {/* <h1 className='header1'>WHAT THE STREETS ARE SAYING</h1>
+          <Row className='remgap2'>
             <Col>
               <p className='body1'>“Morbi a nisl in tortor convallis semper. Nullam et pulvinar orci, ac ultrices lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id egestas enim.”</p>
               <p className='body1'><span className='purple'>Wale</span> from <span className='peach'>Agbero Boys FC</span></p>
@@ -140,12 +147,14 @@ export default function Home() {
               <p className='body1'>“Morbi a nisl in tortor convallis semper. Nullam et pulvinar orci, ac ultrices lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id egestas enim.”</p>
               <p className='body1'><span className='purple'>Wale</span> from <span className='peach'>Agbero Boys FC</span></p>
             </Col>
-          </Row>
-          <div className='subscribeCard' data-aos="zoom-in">
+          </Row> */}
+          <div className='subscribeCard'>
             <h1 className='donateCardHeader mb-4'>JOIN OUR <span className='green'>NEWSLETTER</span></h1>
-            <span className='input mb-3'>Full Name *</span>
-            <span className='input'>Email Address *</span>
-            <button className='donateCardBtn mt-4'>Subscribe</button>
+            <Form className='newsletterForm mont'>
+              <Form.Control className='input mb-3' name="name" type="text" placeholder="Full Name *" autoComplete='true'/>
+              <Form.Control className='input mb-3' name="email" type="text" placeholder="Email Address *" autoComplete='true'/>
+              <Button type='submit' className='donateCardBtn mt-4'>Subscribe</Button>
+            </Form>
           </div>
         </section>
     </>

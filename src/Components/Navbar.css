@@ -15,7 +15,7 @@ a {
     flex-direction: row;
 }
 .niahLogo {
-    max-width: 50px;
+    max-width: 3rem;
 }
 .niahNavbarToggle {
     display: none;
@@ -82,7 +82,7 @@ a {
         padding: 10px;
     }
     .niahLogo {
-        max-width: 25px;
+        max-width: 2rem;
     }
     .niahNavbarToggle {
         display: flex;

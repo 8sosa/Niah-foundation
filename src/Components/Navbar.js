@@ -3,7 +3,7 @@ import './Navbar.css';
 import { useState } from 'react';
 import {Container, Navbar, Offcanvas} from 'react-bootstrap';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import Logo from '../Images/logoBlack.png'
+import Logo from '../Images/logoNoBg.png'
 
 export default function NiahNavbar() {
     const [show, setShow] = useState(false);
@@ -21,8 +21,8 @@ export default function NiahNavbar() {
             <a href="/events" className="navLink" aria-label="events">Events</a>
             <a href="/the-team" className="navLink" aria-label="Team">The Team</a>
             <a href="/volunteer" className="navLink" aria-label="Volunteer">Volunteer</a>
-            <a href="/publications" className="navLink" aria-label="Publications">Publications</a>
-            <a href="/workshops" className="navLink" aria-label="Workshops">Workshops</a>
+            {/* <a href="/publications" className="navLink" aria-label="Publications">Publications</a> */}
+            {/* <a href="/workshops" className="navLink" aria-label="Workshops">Workshops</a> */}
             {/* <a href="/community" className="navLink" aria-label="Community">Community</a> */}
             <a href="/contact-us" className="navLink" aria-label="Contact Us">Contact Us</a>
           </div>
@@ -37,8 +37,8 @@ export default function NiahNavbar() {
                 <a href="/events" className="navLink" aria-label="events">Events</a>
                 <a href="/the-team" className="navLink" aria-label="Team">The Team</a>
                 <a href="/volunteer" className="navLink" aria-label="Volunteer">Volunteer</a>
-                <a href="/publications" className="navLink" aria-label="Publications">Publications</a>
-                <a href="/workshops" className="navLink" aria-label="Workshops">Workshops</a>
+                {/* <a href="/publications" className="navLink" aria-label="Publications">Publications</a>
+                <a href="/workshops" className="navLink" aria-label="Workshops">Workshops</a> */}
                 {/* <a href="/community" className="navLink" aria-label="Community">Community</a> */}
                 <a href="/contact-us" className="navLink mb-5" aria-label="Contact Us">Contact Us</a>
                 <a href='#home'><button className='niahNavbarBtn'>Donate</button></a>
