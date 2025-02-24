@@ -16,13 +16,12 @@ export default function Contact() {
             <Row>
                 <Col className='d-flex flex-column'>
                     <h2 className='colHeader raleway'>CONTACT DETAILS</h2>
-                    <span className='colBody openSans'>General: info@niahfoundation.org</span>
-                    <span className='colBody openSans'>Publicity: niah@niah.com</span>
-                    <span className='colBody openSans'>Phone Number: 09123456789</span>
+                    <span className='colBody openSans'>General: niahfoundation@gmail.com</span>
+                    <span className='colBody openSans'>Phone Number: 07067561557</span>
                 </Col>
                 <Col className='d-flex flex-column'>
                     <h2 className='colHeader raleway'>OUR ADDRESS</h2>
-                    <span className='colBody openSans'>Plot Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Lagos. Nigeria.</span>
+                    <span className='colBody openSans'>Estate Plaza, Emmanuel Keshi. Magodo, Lagos. Nigeria.</span>
                 </Col>
             </Row>
             <div className='contactCard' data-aos="zoom-out">

@@ -26,7 +26,7 @@ export default function NiahNavbar() {
             {/* <a href="/community" className="navLink" aria-label="Community">Community</a> */}
             <a href="/contact-us" className="navLink" aria-label="Contact Us">Contact Us</a>
           </div>
-            <a href='#home' className='niahNavbarBtn ghost'>Donate</a>
+            <a href='/contact-us' className='niahNavbarBtn ghost'>Donate</a>
           <div onClick={handleShow} className='niahNavbarToggle'><RxHamburgerMenu /></div>
           <Offcanvas show={show} onHide={handleClose} placement='end' className="niahNavbarMenu">
             <Offcanvas.Header closeButton></Offcanvas.Header>

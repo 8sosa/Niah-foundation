@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Events.css';
-import Placeholder from '../../Images/ph.png'
+import Eoy from '../../Images/eoy.jpg'
+import Dowager from '../../Images/dowager.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -44,12 +45,12 @@ export default function Events() {
         </div>
         <Row className='eventTab'>
           <Col className='d-flex flex-column mb-5'>
-            <img src={Placeholder} alt='Child getting blood pressure checked' className='eventImg' />
+            <img src={Eoy} alt='Child getting blood pressure checked' className='eventImg' />
             <h4 className='eventHeader raleway'>End of Year Orphanage Party:</h4>
             <span className='eventBody raleway'>We celebrated the end of the year with joy at the Olive Blooms Orphanage, creating memorable moments with the 10 children under the care of excellent People on the 29th of December.</span>
           </Col>
           <Col className='d-flex flex-column mb-5'>
-            <img src={Placeholder} alt='Child getting blood pressure checked' className='eventImg' />
+            <img src={Dowager} alt='Child getting blood pressure checked' className='eventImg' />
             <h4 className='eventHeader raleway'>Dowager (Food) Outreach:</h4>
             <span className='eventBody raleway'>To mark National Grief Awareness Day (August 30), our "Dowager Outreach" reached 100 widows and single mothers, offering essential food items to alleviate their challenges and bring comfort to their lives.</span>
           </Col>

@@ -5,7 +5,7 @@ import Founder from '../../Images/niah.jpg'
 import Med from '../../Images/med.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Placeholder from '../../Images/ph.png'
+import Blood from '../../Images/blood.jpeg'
 
 
 export default function About() {
@@ -65,7 +65,7 @@ export default function About() {
             </Col>
           </Row>
           <Row className='d-flex flex-row align-items-center mb-3'>
-            <Col className='fitted'><img src={Placeholder} alt='A past event' className='eventImg'/></Col>
+            <Col className='fitted'><img src={Blood} alt='A past event' className='eventImg'/></Col>
             <Col>
               <h3 className='eventHeaderTxt'>Blood Drive:</h3>
               <p className='eventHeaderBody'>We contributed to life-saving efforts at Massey Children's Hospital by donating pints of blood during our impactful blood drive on the 2nd of December.</p>

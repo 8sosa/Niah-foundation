@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
 import './Volunteer.css'
 import { Col, Container, Form, Row } from 'react-bootstrap'
-import Placeholder from '../../Images/ph.png'
+import Picture from '../../Images/HPicture.png'
+// import Placeholder from '../../Images/ph.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -10,6 +11,90 @@ export default function Volunteer() {
     AOS.init({ duration: 1000 }); // Adjust the duration if needed
   }, []);
 
+  const units = [
+    {
+        name: "Secretariat Department",
+        responsibilities: [
+            "Ensure proper and timely documentation of the proceedings of meetings of the Executive Council (Department Heads).",
+            "Ensure that minutes are written in a manner that eases reference in respect of all resolutions passed or decisions taken.",
+            "Ensure proper and timely documentation of the proceedings of meetings of the members of the organization.",
+        ]
+    },
+    {
+        name: "Human Resources Department",
+        responsibilities: [
+            "Develop and execute recruitment strategy for the Organization.",
+            "Coordinate quarterly recruitment of active service volunteers.",
+            "Screen and recommend for approval or rejection, to the Executives, an applicant for admission as a member of the organization.",
+        ]
+    },
+    {
+        name: "Finance & Fundraising Department",
+        responsibilities: [
+            "Manage all financial matters concerning the organization.",
+            "Review departmental and project budgets for approval.",
+            "Receive all monies due to the organization, and within 48 hours pay all such monies into the bank account maintained by the organization.",
+        ]
+    },
+    {
+        name: "Education/Training Department",
+        responsibilities: [
+            "Organize training programs beneficial to the excos, members, and community members of Niah Foundation.",
+            "Collaborate with other organizations that can organize training.",
+            "Regularly conduct trainings for volunteers, heads of departments, and community members of the organization.",
+        ]
+    },
+    {
+        name: "Logistics Department",
+        responsibilities: [
+            "Coordinate logistics for the Organization.",
+            "Ensure dispatch and prompt delivery of letters and collaboration materials to prospective sponsors and individuals willing to work together with and for the good of the organization.",
+            "Make arrangements for all technical needs for every outreach or program of the organization.",
+        ]
+    },
+    {
+        name: "Social Media Department",
+        responsibilities: [
+            "Ensure constant circulation and production of mental health-related content for the organization’s social media pages and website.",
+            "Ensure the constant updating of information on all social media platforms as well as the official website of the organization.",
+            "Create a social media calendar for all platforms and execute social media campaigns.",
+        ]
+    },
+    {
+        name: "Media Department",
+        responsibilities: [
+            "Ensure the production of graphic designs to meet the needs of the organization.",
+            "Create and maintain a bank of graphic designs for the organization on Google Drive.",
+            "Think outside the box to come up with creative ideas to raise funds and promote mental wellness.",
+        ]
+    },
+    {
+        name: "Community Engagement & Welfare Department",
+        responsibilities: [
+            "Maintain harmonious relationships amongst the volunteers.",
+            "Serve as the community help desk for all volunteer inquiries and concerns.",
+            "Encourage and check up on volunteers and executives regularly.",
+        ]
+    },
+    {
+        name: "Public Relations & Partnerships Department",
+        responsibilities: [
+            "Ensure innovative partnerships and sponsorships directly impact the organization with well-meaning NGOs, Corporate Bodies, Philanthropists, Celebrities, and Individuals where the situation arises.",
+            "Collaborate with other organizations who share the same ideas and goals.",
+            "Secure Partnerships and Sponsorships directly impacting positively on the organization.",
+        ]
+    },
+    {
+        name: "Programs Coordination Department",
+        responsibilities: [
+            "Plan and coordinate physical and online meetings and see to their success.",
+            "Ensure the smooth planning of support and hangout sessions for community members and members of the public as circumstances permit.",
+            "Ensure innovative partnerships and sponsorships directly impact the organization with well-meaning NGOs, Corporate Bodies, and Individuals where the situation arises.",
+        ]
+    }
+];
+
+
 
   return (
     <>
@@ -17,7 +102,7 @@ export default function Volunteer() {
         <h1 className='pageHeader raleway'>Volunteer</h1>
         <Row className='d-flex flex-column mb-4'>
           <Col>
-            <img src={Placeholder} alt='People volunteering' className='volunteerImg' />
+            <img src={Picture} alt='People volunteering' className='volunteerImg' />
           </Col>
           <Col className='d-flex flex-column align-items-center'>
             <h1 className='founder1Header raleway'>Join Our Volunteer Team and Make a Difference!</h1>
@@ -44,51 +129,67 @@ export default function Volunteer() {
        </Container>
       <Container className='team origins'>
         <h1 className='yt pageHeader raleway'>units</h1>
-        <Row className='mb-5'>
-          <Col className='d-flex flex-column align-items-start jcsa'>
-            <h3 className='unitHead openSans'>Welfare</h3>
-            <p className='unitBody openSans'>Support individuals and communities through direct assistance programs.</p>
-            <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Person Name</span></h4>
-            <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
-          </Col>
-          <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
+        <Row className='w100 gap-5'>
+          {units.map((unit, index) => (
+            <Col xs={12} sm={6} md={5} lg={5} className='teamImgDiv' key={index}>
+              {/* <img src={unit.src} alt='Title of the vlog' className='teamImg' /> */}
+              <h3 className='unitHead openSans bold1'>{unit.name}</h3>
+              <ul>
+                {unit.responsibilities.map((resp, indec) =>(
+                  <li key={index} className='unitBody openSans'>{resp}</li>
+                ))}
+              </ul>
+            </Col>
+          ))}
         </Row>
-        <Row>
-          <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
-          <Col className='d-flex flex-column align-items-end jcsa'>
-            <h3 className='unitHead openSans'>Fundraising</h3>
-            <p className='unitBody openSans'>Drive efforts to secure resources that fuel our mission.</p>
-            <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Jesudamilola Ladipo</span></h4>
-            <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
-          </Col>
-        </Row>
-        <Row className='mb-5'>
-          <Col className='d-flex flex-column align-items-start jcsa'>
-            <h3 className='unitHead openSans'>Finance</h3>
-            <p className='unitBody openSans'>Help manage budgets and ensure efficient allocation of funds.</p>
-            <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Jesudamilola Ladipo</span></h4>
-            <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
-          </Col>
-          <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
-        </Row>
-        <Row>
-          <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
-          <Col className='d-flex flex-column align-items-end jcsa'>
-            <h3 className='unitHead openSans'>Logistics</h3>
-            <p className='unitBody openSans'>Coordinate events, outreach programs, and resource distribution.</p>
-            <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Oluwadamilola Oke</span></h4>
-            <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
-          </Col>
-        </Row>
-        <Row className='mb-5'>
-          <Col className='d-flex flex-column align-items-start jcsa'>
-            <h3 className='unitHead openSans'>Media</h3>
-            <p className='unitBody openSans'>Spread awareness through content creation, campaigns, and digital outreach.  </p>
-            <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Person Name</span></h4>
-            <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
-          </Col>
-          <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
-        </Row>
+        {/* units */}
+        {/* <div>
+          <Row className='mb-5'>
+            <Col className='d-flex flex-column align-items-start jcsa'>
+              <h3 className='unitHead openSans'>Welfare</h3>
+              <p className='unitBody openSans'>Support individuals and communities through direct assistance programs.</p>
+              <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Person Name</span></h4>
+              <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
+            </Col>
+            <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
+          </Row>
+          <Row>
+            <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
+            <Col className='d-flex flex-column align-items-end jcsa'>
+              <h3 className='unitHead openSans'>Fundraising</h3>
+              <p className='unitBody openSans'>Drive efforts to secure resources that fuel our mission.</p>
+              <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Jesudamilola Ladipo</span></h4>
+              <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
+            </Col>
+          </Row>
+          <Row className='mb-5'>
+            <Col className='d-flex flex-column align-items-start jcsa'>
+              <h3 className='unitHead openSans'>Finance</h3>
+              <p className='unitBody openSans'>Help manage budgets and ensure efficient allocation of funds.</p>
+              <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Jesudamilola Ladipo</span></h4>
+              <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
+            </Col>
+            <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
+          </Row>
+          <Row>
+            <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
+            <Col className='d-flex flex-column align-items-end jcsa'>
+              <h3 className='unitHead openSans'>Logistics</h3>
+              <p className='unitBody openSans'>Coordinate events, outreach programs, and resource distribution.</p>
+              <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Oluwadamilola Oke</span></h4>
+              <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
+            </Col>
+          </Row>
+          <Row className='mb-5'>
+            <Col className='d-flex flex-column align-items-start jcsa'>
+              <h3 className='unitHead openSans'>Media</h3>
+              <p className='unitBody openSans'>Spread awareness through content creation, campaigns, and digital outreach.  </p>
+              <h4 className='unitFoot openSans'>Unit Coordinator<span className='unitBody openSans'>: Person Name</span></h4>
+              <h4 className='unitFoot openSans'>Email<span className='unitBody openSans'>: Person.name@mail.com</span></h4>
+            </Col>
+            <Col><img src={Placeholder} alt='A unit' className='unitImg'/></Col>
+          </Row>
+        </div> */}
       </Container>
       <Container className='mosaicBg1'>
         <div className='volunteerCard mt-5 mb-5'>

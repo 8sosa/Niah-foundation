@@ -7,7 +7,8 @@ import Princess from '../../Images/princess.jpg'
 import Oke from '../../Images/okre.jpg'
 import Bello from '../../Images/bello.jpg'
 import Emem from '../../Images/emem.png'
-import Placeholder from '../../Images/ph.png'
+import Audu from '../../Images/audu.jpg'
+import Ife from '../../Images/Ife.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -18,8 +19,8 @@ export default function Team() {
   }, []);
 
   const team = [
-    { id: 1, firstName: "Ifeoluwa", lastName: "Olutayo-Olaoye", src: Placeholder },
-    { id: 2, firstName: "Jessica", lastName: "Audu", src: Placeholder },
+    { id: 1, firstName: "Ifeoluwa", lastName: "Olutayo-Olaoye", src: Ife },
+    { id: 2, firstName: "Jessica", lastName: "Audu", src: Audu },
     { id: 3, firstName: "Jesudamilola", lastName: "Ladipo", src: Ladipo },
     { id: 4, firstName: "Ememobong", lastName: "Umanah", src: Emem },
     { id: 5, firstName: "Princess", lastName: "Briggs", src: Princess },

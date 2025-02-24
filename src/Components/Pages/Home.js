@@ -5,7 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import MissionImg from '../../Images/Picture2.png'
 import TeamImg from '../../Images/hometeam.jpg'
-import Placeholder from '../../Images/ph.png'
+import Pad from '../../Images/pad.jpeg'
+import School from '../../Images/school.jpg'
 
 
 
@@ -20,10 +21,10 @@ export default function Home() {
         <section className='homeHeroSection'>
             <h1 className='homeHeroHeader'>NIAH FOUNDATION</h1>
             <p className='homeHeroText'>“Empowering communities through compassion and action. At Niah Foundation, we champion mental health awareness, special needs inclusion, and holistic wellness for communities across Nigeria. Let’s build a world where every voice matters and every action inspires change.”</p>
-            <div className='homeHeroBtnBox'>
+            {/* <div className='homeHeroBtnBox'>
                 <div className='homeHeroBtn'>CURIOUS</div>
                 <div className='homeHeroBtn'>INTERESTED?</div>
-            </div>
+            </div> */}
         </section>
         <section className='greenGradientSection mt-4'>
           <Row className='w100'>
@@ -81,14 +82,14 @@ export default function Home() {
               <h2 className='eventHeaderTxt'>A Pad for Her Outreach:</h2>
               <p className='eventHeaderBody'>At Prismoni Comprehensive High School, our "A Pad for Her" initiative successfully provided menstrual hygiene products to 100 girls, ensuring their continued access to education without disruptions.</p>
             </Col>
-            <Col><img src={Placeholder} alt='Us doing good' className='eventPic'/></Col>
+            <Col><img src={Pad} alt='Us doing good' className='eventPic'/></Col>
           </Row>
           <Row className='w100 remgap2'>
             <Col md={8}>
               <h2 className='eventHeaderTxt'>School Revamp:</h2>
               <p className='eventHeaderBody'>Prismoni Comprehensive High School underwent a transformative makeover as we painted its walls and built new tables, creating a conducive and uplifting learning environment.</p>
             </Col>
-            <Col><img src={Placeholder} alt='Us doing good' className='eventPic'/></Col>
+            <Col><img src={School} alt='Us doing good' className='eventPic'/></Col>
           </Row>
           <a href='/events' className='eventHeaderTxt align-self-end mb-5'>View more...</a>
           <div className='donateCard mb-4'>
