@@ -105,7 +105,7 @@ export default function Volunteer() {
             <img src={Picture} alt='People volunteering' className='volunteerImg' />
           </Col>
           <Col className='d-flex flex-column align-items-center'>
-            <h1 className='founder1Header raleway'>Join Our Volunteer Team and Make a Difference!</h1>
+            <h1 className='founderHeader raleway'>Join Our Volunteer Team and Make a Difference!</h1>
             <span className='founder1Body openSans'>At Niah Foundation, we believe that everyone has the power to create change. Volunteering with us provides the opportunity to contribute to impactful initiatives across mental health awareness, inclusion, and community welfare.</span>
           </Col>
         </Row>
