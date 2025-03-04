@@ -95,7 +95,7 @@ export default function Home() {
           <div className='donateCard mb-4'>
             <h1 className='donateCardHeader'>Make a <span className='green'>Donation</span></h1>
             <p className='donateCardBody'>Your contribution fuels hope and change. By supporting Niah Foundation, you are empowering mental health awareness, special needs inclusion, and holistic wellness initiatives across communities in Africa.</p>
-            <button className='donateCardBtn'>Donate Now</button>
+            <a href='/donate'><button className='donateCardBtn'>Donate Now</button></a>
           </div>
         </section>
         {/* <section className='greenBg1 pt-5 pb-5'>

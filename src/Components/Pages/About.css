@@ -1,5 +1,6 @@
 #aboutHero {
     background-image: url('../../Images/HERO.png') !important;
+    background-position: center;
     background-size: cover;
     max-width: 100% !important;
 }

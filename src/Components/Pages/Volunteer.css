@@ -22,10 +22,7 @@
     text-wrap: wrap;
 }
 .volunteerCard {
-    background-image: url('../../Images/cardbg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #90EE90;
     padding: 1.875rem 3.125rem;
     display: flex;
     flex-direction: column;

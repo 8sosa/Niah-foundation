@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import './Team.css'
 import { Col, Container, Row } from 'react-bootstrap'
-import Founder from '../../Images/niah.jpg'
+import Founder from '../../Images/founder1.png'
 import Ladipo from '../../Images/ladipo.jpg'
 import Princess from '../../Images/princess.jpg'
 import Oke from '../../Images/okre.jpg'
@@ -19,13 +19,13 @@ export default function Team() {
   }, []);
 
   const team = [
-    { id: 1, firstName: "Ifeoluwa", lastName: "Olutayo-Olaoye", src: Ife },
-    { id: 2, firstName: "Jessica", lastName: "Audu", src: Audu },
-    { id: 3, firstName: "Jesudamilola", lastName: "Ladipo", src: Ladipo },
-    { id: 4, firstName: "Ememobong", lastName: "Umanah", src: Emem },
-    { id: 5, firstName: "Princess", lastName: "Briggs", src: Princess },
-    { id: 6, firstName: "Temitope", lastName: "Bello", src: Bello },
-    { id: 7, firstName: "Oluwadamilola", lastName: "Oke", src: Oke },
+    { id: 1, firstName: "Ifeoluwa", lastName: "Olutayo-Olaoye", role: "General Secretary", src: Ife },
+    { id: 2, firstName: "Jessica", lastName: "Audu", role: "Project Coordinator", src: Audu },
+    { id: 3, firstName: "Jesudamilola", lastName: "Ladipo", role: "Head of Finance and Fundraising", src: Ladipo },
+    { id: 4, firstName: "Ememobong", lastName: "Umanah", role: "Assistant Finance and Fundraising Director", src: Emem },
+    { id: 5, firstName: "Princess", lastName: "Briggs", role: "Head of Media", src: Princess },
+    { id: 6, firstName: "Temitope", lastName: "Bello", role: "Education Officer", src: Bello },
+    { id: 7, firstName: "Oluwadamilola", lastName: "Oke", role: "Head of Logistics", src: Oke },
 ];
 
   return (
@@ -53,8 +53,9 @@ export default function Team() {
         <Row className='w100'>
           {team.map((member) => (
             <Col xs={12} sm={6} md={4} lg={3} className='teamImgDiv' key={member.id}>
-              <img src={member.src} alt='Title of the vlog' className='teamImg' />
+              <img src={member.src} alt={member.firstName} className='teamImg' />
               <h3 className='teamBody raleway shadow1'>{member.firstName}<span className='bold1'> {member.lastName}</span></h3>
+              <p className='raleway'>{member.role}</p>
             </Col>
           ))}
         </Row>

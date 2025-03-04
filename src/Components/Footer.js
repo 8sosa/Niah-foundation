@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
 import {Container} from 'react-bootstrap';
-import Logo from '../Images/logoNoBg.png'
+// import Logo from '../Images/logoNoBg.png'
 
 function NiahFooter() {
   return (
@@ -23,13 +23,13 @@ function NiahFooter() {
                 <div className='footerLinkCol1'>
                     <span className='footerLinkHeader'>CONTACT <span className='peach'>US</span></span>
                     <a href="#top" className='footerLink'>Enquiries:  niahfoundation@gmail.com</a>
-                    <a href="#top" className='footerLink'>Address: Estate Plaza, Emmanuel Keshi. Magodo, Lagos. Nigeria.</a>
+                    <a href="#top" className='footerLink'>Address: Estate Plaza, Emmanuel Keshi. Magodo Phase 2, Lagos. Nigeria.</a>
                     <a href="#top" className='footerLink'>Call: 07067561557</a>
                     <a href="#top" className='footerLink'>Whatsapp: 07067561557</a>
                 </div>
             </div>
             <div className='footerBrand'>
-                <img src={Logo} alt='Niah Foundation logo' className='footerLogo'/>
+                {/* <img src={Logo} alt='Niah Foundation logo' className='footerLogo'/> */}
                 <span className='footerBrandname'><span className='green'>NIAH</span> FOUNDATION</span>
             </div>
             <div className='d-flex flex-column align-items-center'>

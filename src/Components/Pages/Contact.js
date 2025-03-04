@@ -21,7 +21,7 @@ export default function Contact() {
                 </Col>
                 <Col className='d-flex flex-column'>
                     <h2 className='colHeader raleway'>OUR ADDRESS</h2>
-                    <span className='colBody openSans'>Estate Plaza, Emmanuel Keshi. Magodo, Lagos. Nigeria.</span>
+                    <span className='colBody openSans'>Estate Plaza, Emmanuel Keshi. Magodo Phase 2, Lagos. Nigeria.</span>
                 </Col>
             </Row>
             <div className='contactCard' data-aos="zoom-out">

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './Volunteer.css'
-import { Col, Container, Form, Row } from 'react-bootstrap'
+import { Accordion, Col, Container, Form, Row } from 'react-bootstrap'
 import Picture from '../../Images/HPicture.png'
 // import Placeholder from '../../Images/ph.png'
 import AOS from 'aos';
@@ -129,19 +129,21 @@ export default function Volunteer() {
        </Container>
       <Container className='team origins'>
         <h1 className='yt pageHeader raleway'>units</h1>
-        <Row className='w100 gap-5'>
+        <Accordion defaultActiveKey="0" className='accordion w100 gap-5'>
           {units.map((unit, index) => (
-            <Col xs={12} sm={6} md={5} lg={5} className='teamImgDiv' key={index}>
+            <Accordion.Item xs={12} sm={6} md={5} lg={5} eventKey={index} className='aboutHeader teamImgDiv' key={index}>
               {/* <img src={unit.src} alt='Title of the vlog' className='teamImg' /> */}
-              <h3 className='unitHead openSans bold1'>{unit.name}</h3>
-              <ul>
-                {unit.responsibilities.map((resp, indec) =>(
-                  <li key={index} className='unitBody openSans'>{resp}</li>
-                ))}
-              </ul>
-            </Col>
+              <Accordion.Header className='unitHead openSans bold1'>{unit.name}</Accordion.Header>
+              <Accordion.Body className='aboutBody'>
+                <ul>
+                  {unit.responsibilities.map((resp, indec) =>(
+                    <li key={index} className='unitBody openSans black'>{resp}</li>
+                  ))}
+                </ul>
+              </Accordion.Body>
+            </Accordion.Item>
           ))}
-        </Row>
+        </Accordion>
         {/* units */}
         {/* <div>
           <Row className='mb-5'>
