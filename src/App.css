@@ -17,4 +17,7 @@
   .content {
     padding-top: 60px;
   }
+  .fullHeight {
+    height: 65vh;
+  }
 }
