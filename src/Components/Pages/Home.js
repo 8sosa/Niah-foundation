@@ -66,7 +66,7 @@ export default function Home() {
             <p className='OFDesc'>Champion the inclusion of special needs individuals.</p>
             <p className='OFDesc'>Build collaborative systems of care and support.</p>
           </div>
-          <span className='OFDesc mb-4' data-aos="fade-up">* Did you know that the Niah Foundation has transformed lives across Nigeria by supporting over 300 women, including widows and survivors of domestic violence, through mental health resources, food donation drives, and empowerment programs?</span>
+          <span className='OFDesc mb-4' data-aos="fade-up">* Did you know that the Niah Foundation has benefited over 1,000 people, transforming lives across Nigeria, supporting over 300 women, including widows and survivors of domestic violence, through mental health resources, food donation drives, and empowerment programs?</span>
         </section>
         <section className='greenBg pt-5 pb-5'>
           <h1 className='greenBgHeader mb-4 mt-3'>NIAH FOUNDATION TEAM</h1>
