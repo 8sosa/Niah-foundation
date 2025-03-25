@@ -13,6 +13,7 @@ import Workshops from './Pages/Workshops';
 import Community from './Pages/Community';
 import Contact from './Pages/Contact';
 import Donate from './Pages/Donate';
+import Impact from './Pages/Impact';
 
 export default function NiahRouter() {
     return (
@@ -28,6 +29,7 @@ export default function NiahRouter() {
                             <Route path = "/volunteer" element={<Volunteer/>} exact/>
                             <Route path = "/publications" element={<Publications/>} exact/>
                             <Route path = "/workshops" element={<Workshops/>} exact/>
+                            <Route path = "/impact" element={<Impact/>} exact/>
                             <Route path = "/community" element={<Community />} exact/>
                             <Route path = "/donate" element={<Donate />} exact/>
                             <Route path = "/contact-us" element={<Contact/>} exact/>

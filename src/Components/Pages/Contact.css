@@ -63,7 +63,11 @@
     font-size: clamp(8px, 10px, 16px);
     font-weight: 400;
 }
-
+.socialIcon {
+    color: #000;
+    width: 2rem;
+    height: auto;
+}
 @media (min-width: 27rem) {
     .pageHeader {
         font-size: 2rem;

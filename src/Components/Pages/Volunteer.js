@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react'
 import './Volunteer.css'
-import { Accordion, Col, Container, Form, Row } from 'react-bootstrap'
+import { Accordion, Col, Container,
+  //  Form,
+    Row } from 'react-bootstrap'
 import Picture from '../../Images/HPicture.png'
 // import Placeholder from '../../Images/ph.png'
 import AOS from 'aos';
@@ -109,7 +111,7 @@ export default function Volunteer() {
             <span className='founder1Body openSans'>At Niah Foundation, we believe that everyone has the power to create change. Volunteering with us provides the opportunity to contribute to impactful initiatives across mental health awareness, inclusion, and community welfare.</span>
           </Col>
         </Row>
-        <button type='submit' className='donateCardBtn raleway'>Learn More</button>
+        <a href='#units'><button className='donateCardBtn raleway'>Learn More</button></a>
       </Container>
       <Container className='eventsPage'>
         <div className='d-flex flex-column align-items-center'>
@@ -127,7 +129,7 @@ export default function Volunteer() {
           <p className='founder1Body openSans asfs'><span className='bodyBold'>Expectations</span>: Demonstrate professionalism, punctuality, and a commitment to our values.</p>
         </div>
        </Container>
-      <Container className='team origins'>
+      <Container className='team origins' id='units'>
         <h1 className='yt pageHeader raleway'>units</h1>
         <Accordion defaultActiveKey="0" className='accordion w100 gap-5'>
           {units.map((unit, index) => (
@@ -196,7 +198,7 @@ export default function Volunteer() {
       <Container className='mosaicBg1'>
         <div className='volunteerCard mt-5 mb-5'>
           <h1 className='pageHeader raleway'>Volunteer</h1>
-          <Form className='w100'>
+          {/* <Form className='w100'>
             <Form.Group className="mb-3" controlId="Enquirer Name">
                 <Form.Control type="text" placeholder="Full Name" className='inputField raleway'/>
             </Form.Group>
@@ -209,8 +211,11 @@ export default function Volunteer() {
             <Form.Group className="mb-3" controlId="Enquirer Location">
                 <Form.Control type="text" placeholder="Location" className='inputField raleway'/>
             </Form.Group>
-            <button type='submit' className='contactCardBtn raleway'>Register</button>
-          </Form>
+          </Form> */}
+            <a href='https://docs.google.com/forms/d/1OA0CF6yHyzaTTHxg11WBt9SdPkOuWdAG2FVd7Nffm4M/viewform?fbclid=PAZXh0bgNhZW0CMTEAAab79tfDL7FEoXQTBKzdDkGE7GWYnZEmZV1PX8Aj8yJwkVXaNpDKBBIvvoE_aem_H7VOfzeI5BcAbJU9T_ws9Q&edit_requested=true'
+            target="_blank" 
+            rel="noopener noreferrer"
+            ><button className='contactCardBtn raleway'>Register</button></a>
         </div>
       </Container>
     </>

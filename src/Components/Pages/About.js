@@ -71,14 +71,14 @@ export default function About() {
               <p className='eventHeaderBody'>We contributed to life-saving efforts at Massey Children's Hospital by donating pints of blood during our impactful blood drive on the 2nd of December.</p>
             </Col>
           </Row>
-          <a href='/events' className='eventHeaderTxt align-self-end mb-5'>View more...</a>
+          <a href='/impact' className='eventHeaderTxt align-self-end mb-5'>View more...</a>
           <h2 className='eventHeader subHeader raleway' id="eventHeader">IMPACT</h2>
           <ul>
             <li className='newEventTxt mb-2'>Community Outreach: Addressed immediate needs like food, education, and healthcare while integrating mental health education into rural communities.</li>
             <li className='newEventTxt mb-2'>Resource Connection: Linked individuals and communities with affordable mental wellness resources to improve access and support.</li>
             <li className='newEventTxt mb-2'>Proven Impact: Over four years of transforming lives through education, advocacy, and community-driven solutions.</li>
-            <li className='newEventTxt mb-2'>Library Launch / Book Donation Drive: description: Through the support of our great community through book  and monetary donations , we surprised the bright students at Harrobs primary school with the creation of a library for the great minds to grow.</li>
-            <li className='newEventTxt mb-2'>School Visits: Empowering the young minds at Kuramo college with an engaging talk ok mental health, discipline and careers. World education day of 2023 couldn’t be spent in a better way.</li>
+            <li className='newEventTxt mb-2'>Library Launch / Book Donation Drive: Through the support of our great community through book  and monetary donations , we surprised the bright students at Harrobs primary school with the creation of a library for the great minds to grow.</li>
+            <li className='newEventTxt mb-2'>School Visits: Empowering young minds with an engaging talk on mental health, discipline and careers.</li>
           </ul>
         </Container>
     </>

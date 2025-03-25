@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import { Col, Container, Form, Row } from 'react-bootstrap'
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import './Contact.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -18,6 +19,16 @@ export default function Contact() {
                     <h2 className='colHeader raleway'>CONTACT DETAILS</h2>
                     <span className='colBody openSans'>General: niahfoundation@gmail.com</span>
                     <span className='colBody openSans'>Phone Number: 07067561557</span>
+                    <div className='d-flex flex-row gap-5 pt-3'>
+                        <a href='https://www.instagram.com/niah.foundation/'
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        ><FaInstagram className='socialIcon'/></a>
+                        <a href='https://www.linkedin.com/company/niah-foundation/'
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        ><FaLinkedinIn className='socialIcon'/></a>
+                    </div>
                 </Col>
                 <Col className='d-flex flex-column'>
                     <h2 className='colHeader raleway'>OUR ADDRESS</h2>

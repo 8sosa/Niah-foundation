@@ -21,6 +21,7 @@ export default function NiahNavbar() {
             <a href="/events" className="navLink" aria-label="events">Events</a>
             <a href="/the-team" className="navLink" aria-label="Team">The Team</a>
             <a href="/volunteer" className="navLink" aria-label="Volunteer">Volunteer</a>
+            <a href="/impact" className="navLink" aria-label="Impact">Impact</a>
             {/* <a href="/publications" className="navLink" aria-label="Publications">Publications</a> */}
             {/* <a href="/workshops" className="navLink" aria-label="Workshops">Workshops</a> */}
             {/* <a href="/community" className="navLink" aria-label="Community">Community</a> */}
@@ -37,6 +38,7 @@ export default function NiahNavbar() {
                 <a href="/events" className="navLink" aria-label="events">Events</a>
                 <a href="/the-team" className="navLink" aria-label="Team">The Team</a>
                 <a href="/volunteer" className="navLink" aria-label="Volunteer">Volunteer</a>
+                <a href="/impact" className="navLink" aria-label="Impact">Impact</a>
                 {/* <a href="/publications" className="navLink" aria-label="Publications">Publications</a>
                 <a href="/workshops" className="navLink" aria-label="Workshops">Workshops</a> */}
                 {/* <a href="/community" className="navLink" aria-label="Community">Community</a> */}
