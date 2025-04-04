@@ -1,6 +1,9 @@
 .pageHeader {
     margin-bottom: 1.25rem;
 }
+.black {
+    color: #000 !important;
+}
 .volunteerImg {
     border: .0625rem solid #000;
     border-radius: 0.625rem;
